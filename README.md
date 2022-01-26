@@ -2,6 +2,16 @@
 
 copyright (c) 2022 by dario Passariello
 
+![TypeScript](https://img.shields.io/badge/TypeScript-006b98?logo=TypeScript&logoColor=white)
+![Node-js](https://img.shields.io/badge/Node-js-006b98?logo=Node-js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-006b98?logo=Express&logoColor=white)
+![React-js](https://img.shields.io/badge/React-js-006b98?logo=React-js&logoColor=white)
+![Vue-js](https://img.shields.io/badge/Vue-js-006b98?logo=Vue-js&logoColor=white)
+![Mongodb](https://img.shields.io/badge/Mongodb-006b98?logo=Mongodb&logoColor=white)
+![Api](https://img.shields.io/badge/Api-006b98?logo=Api&logoColor=white)
+![dpHelper](https://img.shields.io/badge/dpHelper-006b98?logo=dpHelper&logoColor=white)
+![stModal](https://img.shields.io/badge/stModal-006b98?logo=stModal&logoColor=white)
+
 ## Welcome
 
 Hi, this is Dario!.
