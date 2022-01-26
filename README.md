@@ -9,8 +9,10 @@ copyright (c) 2022 by dario Passariello
 ![Vue-js](https://img.shields.io/badge/Vue-js-006b98?logo=Vue-js&logoColor=white)
 ![Mongodb](https://img.shields.io/badge/Mongodb-006b98?logo=Mongodb&logoColor=white)
 ![Api](https://img.shields.io/badge/Api-006b98?logo=Api&logoColor=white)
-![dpHelper](https://img.shields.io/badge/dpHelper-006b98?logo=dpHelper&logoColor=white)
-![stModal](https://img.shields.io/badge/stModal-006b98?logo=stModal&logoColor=white)
+![dpHelper](https://img.shields.io/badge/dpHelper-npm-green?logo=dpHelper&logoColor=white)
+![stModal](https://img.shields.io/badge/stModal-npm-green?logo=stModal&logoColor=white)
+
+![screenShot](/screenShot/000.png)
 
 ## Welcome
 
