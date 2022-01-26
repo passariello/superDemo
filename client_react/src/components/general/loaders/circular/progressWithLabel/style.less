@@ -1,0 +1,52 @@
+/*
+Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
+License: CC BY-NC-ND 4.0
+*/
+
+.backGroundFullScreen{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:9999;
+	cursor:progress;
+  background:rgba( var( --color_0 ),.01 );
+}
+
+.loading_container{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  color: rgba( var( --color_1 ),1 );
+}
+
+.rotor{
+  position:absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:50%;
+  border: solid;
+  border-color: white;
+  border-color: rgba( var( --color_1 ),1 );
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-width: 5px;
+  width:200px;
+  height:200px;
+  animation: rotating 700ms linear infinite;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

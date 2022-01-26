@@ -1,0 +1,73 @@
+{
+  "folders": [
+    { "path": "./" }
+  ],
+  "settings": {
+
+  "editor.hover.enabled": true,
+  "editor.hover.delay": 2000,
+  "editor.quickSuggestions": true,
+  "editor.quickSuggestionsDelay": 2000,
+
+  "editor.tabCompletion": "off",
+  "editor.renderWhitespace": "all",
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.defaultFormatter": null,
+  "editor.formatOnSave": false,
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingOvertype": "always",
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": { "source.organizeImports": false },
+
+  "files.trimTrailingWhitespace": true,
+  "typescript.format.semicolons": "remove",
+  "javascript.format.semicolons" : "remove",
+
+    "[typescript]": {},
+    "[markdown]": {},
+    "[php]": {},
+    "[css]": {},
+    "[less]": {},
+    "[js]": {},
+
+    "files.exclude": {
+      "**/.DS_Store": true,
+      "**/node_modules": true,
+      "**/.git": true,
+      "**/.svg": true,
+      "**/.xml": true,
+      "**/node_*": true,
+      "**/bower_components": true,
+      "**/.cache": true,
+      "**/tmp": true,
+      "*.lnk": true,
+      "node_modules": true,
+      ".editorconfig": true,
+      ".prettierrc": true,
+      ".prettierignore": true,
+      "package-lock.json": true,
+      ".babelrc": true,
+      "babel.config.js": true,
+      "jest.config.js": true
+    },
+
+    "search.exclude": {
+      ".editorconfig": true,
+      "**/.cache": true,
+      "**/.DS_Store": true,
+      "**/.git": true,
+      "**/.svg": true,
+      "**/.xml": true,
+      "**/bower_components": true,
+      "**/node_*": true,
+      "**/node_modules": true,
+      "**/tmp": true,
+      "babel.config.js": true,
+      "jest.config.js": true,
+      "node_modules": true,
+      "package-lock.json": true
+    }
+
+  }
+
+}

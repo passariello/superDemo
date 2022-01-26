@@ -1,0 +1,47 @@
+/*
+Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
+License: CC BY-NC-ND 4.0
+*/
+
+.button{
+
+  margin: 5px;
+  opacity: .8;
+  display: inline-block;
+
+  a{
+
+    position: relative;
+    color: white !important;
+    font-weight: 500;
+    background-color: #226cdb;
+    border-radius: 4px;
+    transition: 300ms;
+    padding: 1px 8px;
+    text-shadow: 0 0 2px #000;
+    white-space: nowrap;
+    display: flex;
+    height:26px;
+
+    &:hover{
+      background-color: #649bec;
+      cursor: pointer;
+    }
+
+    img{
+      filter:invert(100%);
+      position: relative;
+      height: 100%;
+    }
+
+    span {
+      display: flex;
+      align-content: center;
+      padding: 0 6px 0 8px;
+      align-items: center;
+      font-size: 14px;
+    }
+
+  }
+
+}

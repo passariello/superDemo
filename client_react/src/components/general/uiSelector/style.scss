@@ -1,0 +1,148 @@
+/*
+Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
+License: CC BY-NC-ND 4.0
+*/
+
+:root{
+  --blur:4px;
+  --color_1:white;
+  --color_2:black;
+  --contrast: contrast(10);
+  --transiction: all .3s ease-out;
+  --height:60px;
+}
+
+$options: 3;
+
+/*****************************************************/
+
+#UIauto{
+  display:none;
+}
+
+#switchUI{
+  position:absolute;
+  top:0;
+  right:0;
+  width: 110px;
+  padding:0;
+  background:transparent;
+  z-index:10;
+  mix-blend-mode: screen;
+}
+
+#wrapper {
+  position:relative;
+  filter: var(--contrast);
+  background:var(--color_2);
+  padding:0 10px;
+
+  #slider {
+    position:relative;
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    width:100%;
+    height: var( --height );
+    user-select: none;
+    filter: blur( var(--blur) );
+
+    &::before {
+      content: " ";
+      position: absolute;
+      height: 10px;
+      width: calc(100% * (#{$options - 1} / #{$options}));
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: var(--color_1);
+    }
+
+    input,
+    label {
+      box-sizing: border-box;
+      flex: 1;
+      user-select: none;
+      cursor: pointer;
+    }
+
+    label {
+      display: inline-block;
+      position: relative;
+      width: 20%;
+      height: 100%;
+      user-select: none;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        border: 1px solid var(--color_1);
+        background: var(--color_1);
+        border-radius: 50%;
+        pointer-events: none;
+        user-select: none;
+        z-index: 1;
+        cursor: pointer;
+        transition: var(--transiction);
+      }
+
+      &:hover::after {
+        transform: translate(-50%, -50%);
+        width: 30px;
+        height: 30px;
+      }
+
+    }
+
+    input[type=radio]{
+
+      position:absolute;
+      z-index:3;
+      display: none;
+
+      &:checked {
+
+        + label::after {
+          border-width: 8px;
+          transform: translate(-50%, -50%);
+          width: 20px;
+          height: 20px;
+        }
+
+        @for $i from 1 through $options {
+
+          &:nth-child( #{( $i * 2 ) - 1 } ) ~ #dot {
+            left: #{( $i * 33.33% ) - 16.6% };
+          }
+
+        }
+
+      }
+
+    }
+
+    #dot {
+      filter: var(--contrast);
+      width: 22px;
+      height: 22px;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left:0;
+      background: var(--color_2);
+      border-radius: 50%;
+      transition: var(--transiction);
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+
+  }
+
+}

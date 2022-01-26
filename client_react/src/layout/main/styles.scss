@@ -1,0 +1,52 @@
+/*
+Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
+License: CC BY-NC-ND 4.0
+*/
+
+:root{
+  --main-left: var( --_SuperDemo-aside-width );
+  --margin:5px;
+}
+
+
+main{
+  position:absolute;
+  left: calc( var( --main-left ) + var( --margin ) );
+  right: var( --margin );
+  top: calc( var( --_SuperDemo-header-height ) + var( --_SuperDemo-nav-height ) + var( --margin ) );
+  bottom: calc( var( --_SuperDemo-footer-height ) + var( --margin ) );
+  border-width: 3px;
+  border-color: rgba(255,255,255,.1) !important;
+  z-index: 2;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  font-size:.85em;
+  font-weight: 100;
+  background: var( --_SuperDemo-main-background-color );
+  border-radius:25px;
+  max-width:var( --_SuperDemo-main-max-width );
+  backdrop-filter: blur(8px);
+  color: black !important;
+
+  .route-section{
+    position:absolute;
+    top:15px;
+    bottom:15px;
+    left:15px;
+    right:15px;
+    padding: var( --_SuperDemo-gap-margin );
+    overflow:auto ;
+  }
+
+  h2{
+    font-family:'montserrat', arial, helvetica;
+    letter-spacing:-.05em;
+    font-size:2.5em;
+    opacity:.5;
+  }
+
+  div > div:nth-of-type( 1 ){
+    color: white;
+  }
+
+}

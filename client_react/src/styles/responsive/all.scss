@@ -1,0 +1,34 @@
+
+
+/* STOP IF TOO SMALL */
+@media ( max-width: 120px) , ( max-height: 120px) {
+
+	#root{
+		display:none;
+	}
+
+	body:after{
+		position:absolute;
+		font-size:.8em;
+		content:"sorry, check your zoom";
+		background:white;
+		color:#333;
+		padding:8px;
+		border-radius:5px;
+		top:50%;
+		left:calc( 50% - 70px );
+		display:block;
+	}
+
+}
+
+/**********************************************************************************/
+
+/* HIDE ALL
+@media ( max-width: 120px), ( max-height: 120px) {
+
+	body{
+		display:none;
+	}
+
+} */

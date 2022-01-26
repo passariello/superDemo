@@ -1,0 +1,92 @@
+/*
+Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
+License: CC BY-NC-ND 4.0
+*/
+
+#pageAside{
+
+  position:absolute;
+  width:100%;
+  height:100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: var( --_SuperDemo-aside-width );
+  min-width: 125px;
+  border-width: 0;
+  padding: 5px 10px 5px 5px;
+  background: var( --_SuperDemo-aside-background );
+  z-index: 10;
+  text-align:center;
+
+  ul{
+    position:absolute;
+    right:-30px;
+    top:180px;
+    left:20px;
+    padding:0 2px;
+    font-size:1em;
+
+    li {
+
+      margin-bottom:10px;
+
+      a{
+        position:relative;
+        display:block;
+        background:rgb(197, 30, 30);
+        width:100%;
+        margin-bottom:2px;
+        padding:10px 20px;
+        border-radius:4px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        z-index:2;
+
+        &:hover{
+          cursor:pointer;
+          text-shadow:0 0 10px white, 0 0 20px white;
+
+          &::before{
+            content: "";
+            position:absolute;
+            width:20px;
+            height:25px;
+            background:#2b97c9;
+            z-index:1;
+            left:0;
+            top:0;
+            clip-path: polygon(0 0, 100% 0, 0 100%);
+          }
+
+        }
+
+        &::after{
+          content: "";
+          position:absolute;
+          width:18px;
+          height:18px;
+          background:rgb(122, 0, 0);
+          z-index:1;
+          right:2px;
+          bottom:-18px;
+          //transform:rotate(45deg);
+          clip-path: polygon(0 0, 100% 0, 0 100%);
+        }
+
+      }
+
+      .disabled{
+        cursor: default;
+        pointer-events: none;
+        background:rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(4px);
+      }
+
+    }
+
+  }
+
+}
+
+

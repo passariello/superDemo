@@ -1,0 +1,39 @@
+[
+
+  {
+    "active" : true,
+    "link" : "/home/",
+    "icon" : "",
+    "target" : "",
+    "language" : {
+      "en" : "home",
+      "it" : ""
+    },
+    "sub" : []
+  },
+
+  {
+    "active" : true,
+    "link" : "/about/",
+    "icon" : "",
+    "target" : "",
+    "language" : {
+      "en" : "about",
+      "it" : ""
+    },
+    "sub" : []
+  },
+
+  {
+    "active" : true,
+    "link" : "/help/",
+    "icon" : "",
+    "target" : "",
+    "language" : {
+       "en" : "help",
+       "it" : ""
+    },
+    "sub" : []
+ }
+
+]

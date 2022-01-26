@@ -1,0 +1,66 @@
+header,
+aside,
+nav,
+main,
+footer{
+  border-color: rgba( 0,0,0,.1 ) !important;
+}
+
+header,
+nav,
+footer{
+  border-color: rgba( 0,0,0,.1 ) !important;
+  color:white;
+}
+
+#SuperDemo,
+#SuperDemoLock,
+#SuperDemoInstall{
+  background:rgba(10, 10, 10, 1) !important;
+  color: rgba( 255,255,255,.7 ) !important;
+}
+
+/* nav{
+  background: rgba( 0,0,0,.1 ) !important;
+} */
+
+nav ul li a:hover,
+nav ul li a.selected{
+  color: rgba( 255,255,255,1 ) !important;
+}
+
+aside ul li{
+  background: rgba( 0,0,0,.1 ) !important;
+  width:100%
+}
+
+aside ul li a{
+  color: rgba( 220,225,225,1 ) !important;
+  width:100%
+}
+
+header a{
+  filter:invert(1) !important
+}
+
+header .year{
+  color: orange !important;
+}
+
+fieldset{
+  background: rgba(0,0,0,.3) !important;
+  border-color: rgba(255,255,255,.1) !important;
+}
+
+legend{
+  background: rgba(40, 40, 40, 1) !important;
+  border-color: rgba(0,0,0,.2) !important;
+}
+
+main{
+  background: rgba(0, 0, 0, 0.376) !important;
+  color: rgba( 255,255,255,.8 ) !important;
+  border-color: rgba(0,0,0,.2) !important
+}
+
+

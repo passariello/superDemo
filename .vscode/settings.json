@@ -1,0 +1,35 @@
+{
+  "typescript.suggestionActions.enabled": true,
+  "javascript.suggestionActions.enabled": true,
+
+  "editor.hover.enabled": true,
+  "editor.hover.delay": 2000,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false
+  },
+  "editor.quickSuggestionsDelay": 2000,
+  "editor.tabCompletion": "off",
+  "editor.renderWhitespace": "all",
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.defaultFormatter": null,
+  "editor.formatOnSave": false,
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingOvertype": "always",
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": { "source.organizeImports": false },
+
+  "files.trimTrailingWhitespace": true,
+  "typescript.format.semicolons": "remove",
+  "javascript.format.semicolons" : "remove",
+
+  "[typescript]": {},
+  "[markdown]": {},
+  "[php]": {},
+  "[css]": {},
+  "[less]": {},
+  "[js]": {},
+  "jest.jestCommandLine": "autoEnable",
+
+}

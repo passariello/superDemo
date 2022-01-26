@@ -1,0 +1,69 @@
+/*
+Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
+License: CC BY-NC-ND 4.0
+*/
+
+:root{
+  --header-left:120px;
+}
+
+header{
+
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  height: var( --_SuperDemo-header-height );
+  border-width: 0 0 1px 0;
+  color:black;
+
+  div:nth-child(1){
+
+    padding:4px 0 0 10px;
+
+    img{
+      position:absolute;
+      top:5px;
+      left:10px;
+      width:150px;
+      transition: 500ms;
+      z-index:1000;
+    }
+
+    b{
+      position:absolute;
+      font-size:1.6em;
+      top:15px;
+      left:calc( var(--header-left) + 45px );
+    }
+
+    .year{
+      position: absolute;
+      top: 5px;
+      left: calc( var(--header-left) + 272px );
+      font-size: .9em;
+      color: #7a5000;
+      font-weight:900;
+      letter-spacing:-.05em;
+    }
+
+    span{
+      position:absolute;
+      font-size:.8em;
+      top:45px;
+      left:calc( var(--header-left) + 90px );
+      opacity:.5;
+    }
+
+  }
+
+  #beers{
+    position:absolute;
+    right:110px;
+    top:0px;
+    width:300px;
+    z-index:10;
+    pointer-events: none;
+  }
+
+}
