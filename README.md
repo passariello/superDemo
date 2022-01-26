@@ -17,10 +17,10 @@ copyright (c) 2022 by dario Passariello
 ## Welcome
 
 Hi, this is Dario!.
-This is the demo about beers labels. Everything there is inventend just to show how I build everything and I came to share all informations.
+This is the demo about beer labels. Everything there is invented just to show how I build everything and I came to share all the information.
 I use these technologies:
 
-1) Docker for Mongodb as machine on port 27017.
+1) Docker for Mongodb as a machine on port 27017.
 2) Docker api server on node machine port 9000.
 3) Docker Client React on node machine on port 3000
 4) Docker Client Vue on node machine on port 3001
@@ -31,7 +31,7 @@ If you need to save git log to file use git --no-pager log > git.txt
 
 ## Install
 
-Please run docker-compose.yml first. After you can run Client_react. Sorry but Vue version it's not ready at moment.
+Please run docker-compose.yml first. After that you can run Client_react. Sorry but the Vue version it's not ready at the moment.
 
 If you use windows you can mode to project folder and run docker.bat
 
@@ -54,11 +54,11 @@ Fromm shell move to "/client_vue/server" and execute "npm install --prod" if nec
 npm install --prod
 ```
 
-I want to make automatic during Docker intallation ... it's a TODO
+I want to make it automatic during Docker installation ... it's a TODO
 
 ## Use
 
-From Docker you can run dpSuperDemo.client.react on browser and enjoy my fatique
+From Docker you can run dpSuperDemo.client.react on the browser and enjoy my fatigue
 Inside /client_react/data you have config options.
 
 ## manage db
@@ -69,7 +69,7 @@ Please, download and install MongoDB Compass from <https://www.mongodb.com/produ
 
 1) Docker setup in all parts
 2) React version with webpack installed
-3) Vue boiler plate works but not project is installed
+3) Vue boilerplate works but not project is installed
 4) Mongodb server works
 5) API punkapi full support
 
@@ -85,27 +85,27 @@ Please, download and install MongoDB Compass from <https://www.mongodb.com/produ
 8) images and vectors works properly
 9) Modals are controlled by stModal*
 10) It's possible to use css, less, sass, scss
-11) It's possible to use all kind of image format.
+11) It's possible to use all kinds of image formats.
 12) All data are global and state and store are stored using dpHelper*
 13) Api it's run on node environment
-14) x-user is used to validate vote.
+14) x-user is used to validate votes.
 15) Same email can't vote more time same item
 16) Voting is in realtime.
-17) Everyting is SPA
+17) Everything is SPA
 18) All components should be shared between different pages
 19) redux is installed but not used... use dpHelper instead.
 
 ## Vue version
 
-Caming soon
+Coming soon
 
 ## dpHelper, stModal
 
-NPM dpHelper and stModal are develop by Dario Passariello.
-dpHelper are a collection of globals function and memory state, store management. stModal are a alert, confir replacement.
+NPM dpHelper and stModal are developed by Dario Passariello.
+dpHelper is a collection of global function and memory state, store management. stModal are an alert, confirm replacement.
 Copyright by Dario Passariello
 
-## Licence
+## License
 
 ### Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
 
@@ -138,99 +138,106 @@ rights may limit how you use the material.
 .
 ├───.vscode
 ├───api
-│   ├───bin
-│   ├───data
-│   ├───public
-│   │   └───stylesheets
-│   ├───routes
-│   └───views
+│   ├───bin
+│   ├───data
+│   ├───public
+│   │   └───stylesheets
+│   ├───routes
+│   └───views
 ├───client_react
-│   ├───public
-│   │   └───assets
-│   │       ├───fonts
-│   │       ├───icons
-│   │       ├───images
-│   │       ├───loaders
-│   │       ├───logos
-│   │       ├───themes
-│   │       └───vectors
-│   ├───server
-│   ├───src
-│   │   ├───components
-│   │   │   ├───general
-│   │   │   │   ├───castVote
-│   │   │   │   ├───loaders
-│   │   │   │   │   ├───circular
-│   │   │   │   │   │   ├───progress
-│   │   │   │   │   │   └───progressWithLabel
-│   │   │   │   │   └───horizontal
-│   │   │   │   │       ├───progress
-│   │   │   │   │       └───save
-│   │   │   │   ├───lock
-│   │   │   │   ├───music
-│   │   │   │   ├───social
-│   │   │   │   └───uiSelector
-│   │   │   └───shared
-│   │   │       ├───audio
-│   │   │       ├───code
-│   │   │       ├───fieldset
-│   │   │       ├───input-checkbox
-│   │   │       ├───input-email
-│   │   │       ├───input-password
-│   │   │       ├───input-radio
-│   │   │       ├───input-reset
-│   │   │       ├───input-search
-│   │   │       ├───input-submit
-│   │   │       ├───input-switch
-│   │   │       ├───input-text
-│   │   │       ├───legend
-│   │   │       ├───textarea
-│   │   │       └───video
-│   │   ├───config
-│   │   ├───data
-│   │   ├───layout
-│   │   │   ├───aside
-│   │   │   ├───footer
-│   │   │   ├───header
-│   │   │   ├───main
-│   │   │   └───nav
-│   │   ├───pages
-│   │   │   ├───about
-│   │   │   ├───help
-│   │   │   ├───home
-│   │   │   ├───notFound
-│   │   │   └───vote
-│   │   ├───redux
-│   │   │   ├───actions
-│   │   │   └───reducers
-│   │   │       └───shared
-│   │   │           ├───auth
-│   │   │           └───test
-│   │   ├───scripts
-│   │   ├───styles
-│   │   │   ├───responsive
-│   │   │   └───scss
-│   │   └───typings
-│   └───tests
+│   ├───public
+│   │   └───assets
+│   │       ├───fonts
+│   │       ├───icons
+│   │       ├───images
+│   │       ├───loaders
+│   │       ├───logos
+│   │       ├───themes
+│   │       └───vectors
+│   ├───server
+│   ├───src
+│   │   ├───components
+│   │   │   ├───general
+│   │   │   │   ├───castVote
+│   │   │   │   ├───loaders
+│   │   │   │   │   ├───circular
+│   │   │   │   │   │   ├───progress
+│   │   │   │   │   │   └───progressWithLabel
+│   │   │   │   │   └───horizontal
+│   │   │   │   │       ├───progress
+│   │   │   │   │       └───save
+│   │   │   │   ├───lock
+│   │   │   │   ├───music
+│   │   │   │   ├───social
+│   │   │   │   └───uiSelector
+│   │   │   └───shared
+│   │   │       ├───audio
+│   │   │       ├───code
+│   │   │       ├───fieldset
+│   │   │       ├───input-checkbox
+│   │   │       ├───input-email
+│   │   │       ├───input-password
+│   │   │       ├───input-radio
+│   │   │       ├───input-reset
+│   │   │       ├───input-search
+│   │   │       ├───input-submit
+│   │   │       ├───input-switch
+│   │   │       ├───input-text
+│   │   │       ├───legend
+│   │   │       ├───textarea
+│   │   │       └───video
+│   │   ├───config
+│   │   ├───data
+│   │   ├───layout
+│   │   │   ├───aside
+│   │   │   ├───footer
+│   │   │   ├───header
+│   │   │   ├───main
+│   │   │   └───nav
+│   │   ├───pages
+│   │   │   ├───about
+│   │   │   ├───help
+│   │   │   ├───home
+│   │   │   ├───notFound
+│   │   │   └───vote
+│   │   ├───redux
+│   │   │   ├───actions
+│   │   │   └───reducers
+│   │   │       └───shared
+│   │   │           ├───auth
+│   │   │           └───test
+│   │   ├───scripts
+│   │   ├───styles
+│   │   │   ├───responsive
+│   │   │   └───scss
+│   │   └───typings
+│   └───tests
 ├───client_vue
-│   ├───build
-│   ├───config
-│   ├───demo
-│   ├───dist
-│   │   └───static
-│   │       ├───css
-│   │       └───js
-│   ├───server
-│   ├───src
-│   │   ├───assets
-│   │   ├───components
-│   │   └───router
-│   ├───static
-│   └───test
-│       ├───e2e
-│       │   ├───custom-assertions
-│       │   └───specs
-│       └───unit
-│           └───specs
+│   ├───build
+│   ├───config
+│   ├───demo
+│   ├───dist
+│   │   └───static
+│   │       ├───css
+│   │       └───js
+│   ├───server
+│   ├───src
+│   │   ├───assets
+│   │   ├───components
+│   │   └───router
+│   ├───static
+│   └───test
+│       ├───e2e
+│       │   ├───custom-assertions
+│       │   └───specs
+│       └───unit
+│           └───specs
 ├───mongo
 └───screenShot
+
+---------------------------------------
+Dario Passariello
+Web Application Developer
+Trainer and 3D Expert
+https://dario.passariello.ca
+mobile: +1 778 318 2645
