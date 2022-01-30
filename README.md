@@ -25,6 +25,11 @@ I use these technologies:
 3) Docker Client React on node machine on port 3000
 4) Docker Client Vue on node machine on port 3001
 
+## Live Demo link
+
+If you want to make a look in a live version:
+<https://superdemo.picla.net/>
+
 ## save git log to file
 
 If you need to save git log to file use git --no-pager log > git.txt
@@ -138,106 +143,106 @@ rights may limit how you use the material.
 .
 ├───.vscode
 ├───api
-│   ├───bin
-│   ├───data
-│   ├───public
-│   │   └───stylesheets
-│   ├───routes
-│   └───views
+│   ├───bin
+│   ├───data
+│   ├───public
+│   │   └───stylesheets
+│   ├───routes
+│   └───views
 ├───client_react
-│   ├───public
-│   │   └───assets
-│   │       ├───fonts
-│   │       ├───icons
-│   │       ├───images
-│   │       ├───loaders
-│   │       ├───logos
-│   │       ├───themes
-│   │       └───vectors
-│   ├───server
-│   ├───src
-│   │   ├───components
-│   │   │   ├───general
-│   │   │   │   ├───castVote
-│   │   │   │   ├───loaders
-│   │   │   │   │   ├───circular
-│   │   │   │   │   │   ├───progress
-│   │   │   │   │   │   └───progressWithLabel
-│   │   │   │   │   └───horizontal
-│   │   │   │   │       ├───progress
-│   │   │   │   │       └───save
-│   │   │   │   ├───lock
-│   │   │   │   ├───music
-│   │   │   │   ├───social
-│   │   │   │   └───uiSelector
-│   │   │   └───shared
-│   │   │       ├───audio
-│   │   │       ├───code
-│   │   │       ├───fieldset
-│   │   │       ├───input-checkbox
-│   │   │       ├───input-email
-│   │   │       ├───input-password
-│   │   │       ├───input-radio
-│   │   │       ├───input-reset
-│   │   │       ├───input-search
-│   │   │       ├───input-submit
-│   │   │       ├───input-switch
-│   │   │       ├───input-text
-│   │   │       ├───legend
-│   │   │       ├───textarea
-│   │   │       └───video
-│   │   ├───config
-│   │   ├───data
-│   │   ├───layout
-│   │   │   ├───aside
-│   │   │   ├───footer
-│   │   │   ├───header
-│   │   │   ├───main
-│   │   │   └───nav
-│   │   ├───pages
-│   │   │   ├───about
-│   │   │   ├───help
-│   │   │   ├───home
-│   │   │   ├───notFound
-│   │   │   └───vote
-│   │   ├───redux
-│   │   │   ├───actions
-│   │   │   └───reducers
-│   │   │       └───shared
-│   │   │           ├───auth
-│   │   │           └───test
-│   │   ├───scripts
-│   │   ├───styles
-│   │   │   ├───responsive
-│   │   │   └───scss
-│   │   └───typings
-│   └───tests
+│   ├───public
+│   │   └───assets
+│   │       ├───fonts
+│   │       ├───icons
+│   │       ├───images
+│   │       ├───loaders
+│   │       ├───logos
+│   │       ├───themes
+│   │       └───vectors
+│   ├───server
+│   ├───src
+│   │   ├───components
+│   │   │   ├───general
+│   │   │   │   ├───castVote
+│   │   │   │   ├───loaders
+│   │   │   │   │   ├───circular
+│   │   │   │   │   │   ├───progress
+│   │   │   │   │   │   └───progressWithLabel
+│   │   │   │   │   └───horizontal
+│   │   │   │   │       ├───progress
+│   │   │   │   │       └───save
+│   │   │   │   ├───lock
+│   │   │   │   ├───music
+│   │   │   │   ├───social
+│   │   │   │   └───uiSelector
+│   │   │   └───shared
+│   │   │       ├───audio
+│   │   │       ├───code
+│   │   │       ├───fieldset
+│   │   │       ├───input-checkbox
+│   │   │       ├───input-email
+│   │   │       ├───input-password
+│   │   │       ├───input-radio
+│   │   │       ├───input-reset
+│   │   │       ├───input-search
+│   │   │       ├───input-submit
+│   │   │       ├───input-switch
+│   │   │       ├───input-text
+│   │   │       ├───legend
+│   │   │       ├───textarea
+│   │   │       └───video
+│   │   ├───config
+│   │   ├───data
+│   │   ├───layout
+│   │   │   ├───aside
+│   │   │   ├───footer
+│   │   │   ├───header
+│   │   │   ├───main
+│   │   │   └───nav
+│   │   ├───pages
+│   │   │   ├───about
+│   │   │   ├───help
+│   │   │   ├───home
+│   │   │   ├───notFound
+│   │   │   └───vote
+│   │   ├───redux
+│   │   │   ├───actions
+│   │   │   └───reducers
+│   │   │       └───shared
+│   │   │           ├───auth
+│   │   │           └───test
+│   │   ├───scripts
+│   │   ├───styles
+│   │   │   ├───responsive
+│   │   │   └───scss
+│   │   └───typings
+│   └───tests
 ├───client_vue
-│   ├───build
-│   ├───config
-│   ├───demo
-│   ├───dist
-│   │   └───static
-│   │       ├───css
-│   │       └───js
-│   ├───server
-│   ├───src
-│   │   ├───assets
-│   │   ├───components
-│   │   └───router
-│   ├───static
-│   └───test
-│       ├───e2e
-│       │   ├───custom-assertions
-│       │   └───specs
-│       └───unit
-│           └───specs
+│   ├───build
+│   ├───config
+│   ├───demo
+│   ├───dist
+│   │   └───static
+│   │       ├───css
+│   │       └───js
+│   ├───server
+│   ├───src
+│   │   ├───assets
+│   │   ├───components
+│   │   └───router
+│   ├───static
+│   └───test
+│       ├───e2e
+│       │   ├───custom-assertions
+│       │   └───specs
+│       └───unit
+│           └───specs
 ├───mongo
 └───screenShot
 
 ---------------------------------------
 Dario Passariello
-Web Application Developer
+Web Application Developer
 Trainer and 3D Expert
-https://dario.passariello.ca
+<https://dario.passariello.ca>
 mobile: +1 778 318 2645
