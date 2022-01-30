@@ -36,7 +36,7 @@ If you need to save git log to file use git --no-pager log > git.txt
 
 ## Install
 
-Please run docker-compose.yml first. After that you can run Client_react. Sorry but the Vue version it's not ready at the moment.
+Please run docker-compose.yml first. After that you can run client_react. Sorry but the Vue version it's not ready at the moment.
 
 If you use windows you can mode to project folder and run docker.bat
 
@@ -48,8 +48,8 @@ If you use windows you can mode to project folder and run docker.bat
 npm install --prod ( --force if necessary )
 ```
 
-Fromm shell move to "/client_react/server" and execute "npm install --prod" if necessary
-Fromm shell move to "/client_vue/server" and execute "npm install --prod" if necessary
+From shell move to "/client_react/server" and execute "npm install --prod" if necessary
+From shell move to "/client_vue/server" and execute "npm install --prod" if necessary
 
 ```js
 # DO NOT FORGET
@@ -63,7 +63,7 @@ I want to make it automatic during Docker installation ... it's a TODO
 
 ## Use
 
-From Docker you can run dpSuperDemo.client.react on the browser and enjoy my fatigue
+From Docker you can run dpSuperDemo.client.react on the browser and enjoy my fatigue.
 Inside /client_react/data you have config options.
 
 ## manage db
