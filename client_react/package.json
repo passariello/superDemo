@@ -73,7 +73,7 @@
     "redux-devtools-extension": "2.13.9",
     "redux-thunk": "2.4.1",
     "require": "2.4.20",
-    "sass": "1.45.1",
+    "sass": "1.53.0",
     "stmodal": "0.1.84",
     "terser-webpack-plugin": "5.3.0",
     "ts-jest": "27.1.3",
