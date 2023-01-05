@@ -7,18 +7,18 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "axios": "^0.25.0",
+    "axios": "^1.2.2",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
-    "debug": "^4.3.3",
-    "dphelper": "^0.2.38",
-    "express": "^4.17.2",
+    "debug": "^4.3.4",
+    "dphelper": "^0.2.102",
+    "express": "^4.18.2",
     "http-errors": "^2.0.0",
     "jade": "^0.31.2",
     "memory-cache": "^0.2.0",
-    "mongoose": "^6.1.7",
+    "mongoose": "^6.8.2",
     "morgan": "^1.10.0",
-    "node-fetch": "^3.2.0",
+    "node-fetch": "^3.3.0",
     "nosql": "^6.1.0",
     "request": "^2.88.2"
   }
