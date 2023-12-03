@@ -21,11 +21,11 @@ export const Uiselector = ( props ) => {
 
 
       if ( currentTheme ){
-        document.head.insertAdjacentHTML('beforeend',`<link class="changeTheme" rel="stylesheet" href="/assets/themes/${currentTheme}.css" />`)
+        document.head.insertAdjacentHTML('beforeend',`<link class="changeTheme" rel="stylesheet" href="/themes/${currentTheme}.css" />`)
         localStorage.setItem('theme', currentTheme )
         setDefTheme( currentTheme )
       }else{
-        document.head.insertAdjacentHTML('beforeend',`<link class="changeTheme" rel="stylesheet" href="/assets/themes/dark.css" media="(prefers-color-scheme: dark)" />`)
+        document.head.insertAdjacentHTML('beforeend',`<link class="changeTheme" rel="stylesheet" href="/themes/dark.css" media="(prefers-color-scheme: dark)" />`)
       }
 
     },[])
@@ -42,19 +42,19 @@ export const Uiselector = ( props ) => {
         switch ( e.target.id || value ) {
 
           case "1":
-            document.head.insertAdjacentHTML('beforeend',`<link class="changeTheme" rel="stylesheet" href="/assets/themes/light.css" />`)
+            document.head.insertAdjacentHTML('beforeend',`<link class="changeTheme" rel="stylesheet" href="/themes/light.css" />`)
             localStorage.setItem('theme', 'light')
             setDefTheme( 'light' )
             break
 
           case "2":
-            document.head.insertAdjacentHTML('beforeend',`<link class="changeTheme" rel="stylesheet" href="/assets/themes/dark.css" media="(prefers-color-scheme: dark)" />`)
+            document.head.insertAdjacentHTML('beforeend',`<link class="changeTheme" rel="stylesheet" href="/themes/dark.css" media="(prefers-color-scheme: dark)" />`)
             localStorage.setItem('theme', '')
             setDefTheme( '' )
             break
 
           case "3":
-            document.head.insertAdjacentHTML('beforeend',`<link class="changeTheme" rel="stylesheet" href="/assets/themes/dark.css" />`)
+            document.head.insertAdjacentHTML('beforeend',`<link class="changeTheme" rel="stylesheet" href="/themes/dark.css" />`)
             localStorage.setItem('theme', 'dark')
             setDefTheme( 'dark' )
             break

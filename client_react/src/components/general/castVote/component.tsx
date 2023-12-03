@@ -26,13 +26,15 @@ const [ rate , setRate ] = useState( null );
       })
     };
 
-    fetch( _SuperDemo.conf.apiProd + '/api/rating/', requestOptions )
+    fetch( _SuperDemo.api + _SuperDemo.conf.appAPI + 'rating/', requestOptions )
         .then(response => response.json())
         .then(response => {
 
           // RESPONSE ABOUT VOTE
-          console.log(response)
+          //console.log(response)
+
           if( response.record === 'exist' ) alert( 'sorry, you already voted!' )
+
           if( response.record === 'inserted' ){
             getRating( props.id )
             alert( 'Many thanks, we received your vote!' )
@@ -48,17 +50,19 @@ const [ rate , setRate ] = useState( null );
   /*********************************************************************/
 
   const getRating = ( id ) => {
-    fetch( _SuperDemo.conf.apiProd + '/api/count/?id=' + id  )
+    fetch( _SuperDemo.api + _SuperDemo.conf.appAPI + 'count/?id=' + id  )
     .then(res => res.json())
     .then(res => {
       setRate( Number( res[0].rating / res[0].count ) || 0 )
+      //console.log( Number( res[0].rating / res[0].count ) || 0 )
     })
     .catch(err => err)
+
   }
 
   useEffect(()=>{
     getRating( props.id );
-  },[])
+  })
 
   // setTimeout(()=>{}, 2000 )
 

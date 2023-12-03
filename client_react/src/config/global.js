@@ -27,6 +27,9 @@ _SuperDemo.nav = require("../data/nav.json");
 _SuperDemo.conf = pjson;
 _SuperDemo.music = ''; //autoplay'
 
+_SuperDemo.api = ( window.location.hostname === "localhost" ||  window.location.hostname === "127.0.0.1" ) ? _SuperDemo.conf.apiDev + '/'
+: '//' + window.location.hostname + _SuperDemo.conf.apiProd;
+
 if ( location.hostname === "localhost" || location.hostname === "127.0.0.1" ){
   console.debug( "This message it's only from localhost: type _SuperDemo into console to see all options",  _SuperDemo );
 }

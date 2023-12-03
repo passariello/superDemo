@@ -160,6 +160,21 @@ body{
 
 }
 
+#demo{
+  position:relative;
+  border:1px orange solid !important;
+  background: rgba(253, 247, 179, 0.671);
+  padding:10px;
+  text-align:center;
+  margin:0 0 10px 0;
+  z-index:10;
+  border-radius:25px;
+
+  a:hover{
+    color: red;
+  }
+}
+
 
 
 

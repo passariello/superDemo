@@ -3,15 +3,15 @@ Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
 License: CC BY-NC-ND 4.0
 */
 
-let express = require('express');
-let request = require('request');
-let router = express.Router();
+let express = require('express')
+let request = require('request')
+let router = express.Router()
 
-let config = require('../data/config.json');
+let config = require('../data/config.json')
 
-router.post('/', function(req, res, next) {
+router.post('/', function (req, res, next) {
 
-  res.json({});
+  res.json({})
 
   // var parse = new URLSearchParams( req._parsedOriginalUrl?.query );
 
@@ -35,7 +35,7 @@ router.post('/', function(req, res, next) {
   // });
 
 
-});
+})
 
 module.exports = router;
 

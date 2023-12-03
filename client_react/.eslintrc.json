@@ -1,11 +1,10 @@
 {
   "eslint.autoFixOnSave": false,
   "eslint.validate": [],
-  
+
   "env": {
     "browser": false,
-    "node": true,
-    "jest": true
+    "node": true
   },
   "parserOptions": {
     "ecmaVersion": 2018,
@@ -17,14 +16,12 @@
   "plugins": [
     "node",
     "promise",
-    "jest",
     "unicorn"
   ],
   "extends": [
     "eslint:recommended",
     "plugin:node/recommended",
     "plugin:promise/recommended",
-    "plugin:jest/recommended",
     "plugin:unicorn/recommended"
   ],
   "rules": {

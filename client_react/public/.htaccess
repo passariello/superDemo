@@ -1,0 +1,46 @@
+#***************************************************************************
+# Software created by Dario Passariello all right reserved 2021.
+# Copyright and intellectual property are by Dario Passariello and,
+# for what concern external scripts, by the respective owner.
+
+# Copyright 2021 - Dario Passariello
+
+# Dario Passariello
+# web: https://dario.passariello.ca
+# email: dariopassariello@gmail.com
+# tel: +1-778-318-2645
+
+# ***************************************************************************
+
+	FileETag None
+    Header unset ETag
+
+    # disable browser cache for service-worker.js file
+
+  <FilesMatch "^(service-worker.js)$">
+    Header unset Expires
+    Header set Cache-Control "max-age=0"
+  </FilesMatch>
+
+	<IfModule mod_headers.c>
+		Header set Access-Control-Allow-Origin '*'
+	</IfModule>
+
+# REWRITE
+# ***************************************************************************
+
+	<IfModule mod_rewrite.c>
+
+		RewriteEngine On
+		RewriteBase /
+
+		RewriteCond %{REQUEST_FILENAME} !-f
+		RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^api(.*) http://localhost:9000%{REQUEST_URI} [P,QSA,NE]
+
+    RewriteRule ^(.*)/$ /index.html [L]
+
+		RewriteCond %{REQUEST_URI} !(/$|\.)
+		RewriteRule (.*) %{REQUEST_URI}/ [R=301,L]
+
+	</IfModule>

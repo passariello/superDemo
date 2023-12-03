@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js"
   },
-  "author": "Dario Passariello",
+  "author": "",
   "license": "CC BY-NC-ND 4.0",
   "dependencies": {
     "express": "^4.17.2",

@@ -1,0 +1,7 @@
+FROM mongo
+
+COPY ./mongo/data/init.json init.json
+
+CMD mongoimport --host mongodb --db beers --collection v1 < init.json && \
+    ls *.json | xargs -I filename mongoimport --host mongodb --db beers --collection v1 < --file example.json-u
+

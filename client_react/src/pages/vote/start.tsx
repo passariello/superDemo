@@ -21,7 +21,7 @@ function Vote() {
   // FIRST SETUP
   let totalBeers = 325, // from original creator https://github.com/sammdec/punkapi
       page = dphelper.path.query()['page'] || 1,
-      per_page = dphelper.path.query()['per_pages'] || 80,
+      per_page = dphelper.path.query()['per_pages'] || 40,
       pages = dphelper.path.query()['id'] ? 1 : Math.ceil( totalBeers / per_page )
       pages = dphelper.path.query()['name'] ? 1 : Math.ceil( totalBeers / per_page )
 
@@ -52,7 +52,7 @@ function Vote() {
 
     }else{
 
-      fetch( _SuperDemo.conf.apiProd + '/api/get' + id + name + other )
+      fetch( _SuperDemo.api + _SuperDemo.conf.appAPI + 'get' + id + name + other )
         .then(res => res.json())
         .then(res => {
           setBeersList([... res ])
@@ -63,8 +63,9 @@ function Vote() {
     }
 
     setTimeout(()=>{
-      document.querySelector(".beer").scrollTop = 0
-    }, 500)
+      const scroll = document.querySelector(".beer")
+      if( scroll ) scroll.scrollTop = 0
+    }, 1000)
   }
 
   useEffect( ()=>{

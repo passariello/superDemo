@@ -24,6 +24,8 @@ const RoutePath = () => {
 
           <section className="route-section">
 
+          <div id="demo">This is just a live demo. Visit <b><a href="https://github.com/passariello/superDemo"> GitHub </a></b> for more information </div>
+
             <Routes>
 
               <Route path="*" element={<NotFound/>} />

@@ -25,11 +25,12 @@ const CopyPlugin = require("copy-webpack-plugin");
         root: pjson.appFolder,
         folderAPI: pjson.appAPI,
         port: argv.mode === 'development' ? pjson.appPortDev : pjson.appPort,
-        mode: argv.mode === 'development' ? 'development' : 'production',
+        api: argv.mode === 'development' ? pjson.apiDev : pjson.apiProd
       }
     );
 
-    console.debug( "\n\tYour API came from: " + JSON.stringify( pjson.apiDev ) + "\n\n");
+    let api = argv.mode === 'development' ? pjson.apiDev : pjson.apiProd;
+    console.debug( "\n\tYour API came from: " + api + "\n\n");
 
     return {
 
