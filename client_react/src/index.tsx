@@ -4,7 +4,7 @@ License: CC BY-NC-ND 4.0
 */
 
 import React from "react"
-import ReactDOM from "react-dom"
+import { createRoot } from "react-dom/client"
 import { BrowserRouter } from "react-router-dom"
 
 // DPHELPER
@@ -20,25 +20,24 @@ import 'Root/config/global.js'
 
 import App from './app'
 import reportWebVitals from './scripts/ReportWebVitals'
-import registerServiceWorker from './scripts/registerServiceWorker'
-
-if( document.querySelector('#root') ){
+// import registerServiceWorker from './scripts/registerServiceWorker'
 
   const store = configureStore()
+  const container = document.querySelector('#root')
 
-  ReactDOM.render(
+if( container ){
 
+  createRoot( container ).render(
     <Provider store={store}>
       <React.StrictMode>
         <BrowserRouter>
           <App />
         </BrowserRouter>
       </React.StrictMode>
-    </Provider>,
-    document.querySelector('#root')
+    </Provider>
   )
 
-  registerServiceWorker()
+  // registerServiceWorker()
   reportWebVitals()
 
 }

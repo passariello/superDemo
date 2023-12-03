@@ -1,24 +1,24 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+*.OLD
+*.bak
+*-lock.json
 
 # dependencies
-/node_modules/*
-/.pnp
-.pnp.js
-#*.OLD
-*.bak
-/backup/*
+*node_module*
 /mongo/data-node/*
+
+# DB nodes
+*/data-node/*
 
 # testing
 /coverage
 
 # production
-/out
 /build
 /dist
 
 # misc
-.webpack
 .DS_Store
 .env.local
 .env.development.local
