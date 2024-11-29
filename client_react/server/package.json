@@ -9,7 +9,7 @@
   "author": "",
   "license": "CC BY-NC-ND 4.0",
   "dependencies": {
-    "express": "^4.17.2",
+    "express": "^4.21.1",
     "fs": "^0.0.1-security",
     "http": "^0.0.1-security"
   }
