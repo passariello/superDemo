@@ -47,10 +47,10 @@
     "@testing-library/react": "^14.1.2",
     "@testing-library/user-event": "^14.5.1",
     "classnames": "2.3.2",
-    "compression-webpack-plugin": "10.0.0",
+    "compression-webpack-plugin": "11.0.0",
     "concurrently": "8.2.2",
     "connected-react-router": "6.9.3",
-    "copy-webpack-plugin": "11.0.0",
+    "copy-webpack-plugin": "12.0.0",
     "css": "3.0.0",
     "dphelper": "0.4.8",
     "file-loader": "^6.2.0",
@@ -63,7 +63,7 @@
     "jshint": "^2.13.6",
     "latest-version": "7.0.0",
     "less": "4.2.0",
-    "npm-check-updates": "16.14.11",
+    "npm-check-updates": "17.0.0",
     "path": "0.12.7",
     "progress-bar-webpack-plugin": "2.1.0",
     "react": "18.2.0",
@@ -77,11 +77,11 @@
     "redux-devtools-extension": "2.13.9",
     "redux-thunk": "2.4.2",
     "require": "2.4.20",
-    "sass": "1.69.5",
+    "sass": "1.79.0",
     "stmodal": "0.1.84",
     "terser-webpack-plugin": "5.3.9",
     "web-vitals": "3.5.0",
-    "webdriverio": "8.24.6"
+    "webdriverio": "9.0.0"
   },
   "eslintConfig": {
     "extends": [
