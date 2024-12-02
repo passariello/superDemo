@@ -16,7 +16,7 @@
     "http-errors": "^2.0.0",
     "jade": "^0.29.0",
     "memory-cache": "^0.2.0",
-    "mongoose": "^8.0.2",
+    "mongoose": "^8.8.1",
     "morgan": "^1.10.0",
     "node-fetch": "^3.3.2",
     "nosql": "^6.1.0",
