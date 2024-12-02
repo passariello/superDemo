@@ -10,7 +10,7 @@
     "axios": "^1.6.2",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
-    "debug": "^4.3.4",
+    "debug": "^4.3.7",
     "dphelper": "^0.4.8",
     "express": "^4.18.2",
     "http-errors": "^2.0.0",
