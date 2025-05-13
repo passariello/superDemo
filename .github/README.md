@@ -58,7 +58,7 @@ I want to make it automatic during Docker installation ... it's a TODO
 
 ## Use
 
-From Docker you can run dpSuperDemo.client.react on the browser and enjoy my fatigue.
+From Docker you can run superDemo.client on the browser and enjoy my fatigue.
 Inside /client/data you have config options.
 
 ## manage db
