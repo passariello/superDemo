@@ -1,0 +1,20 @@
+FROM node::22-alpine
+ARG API_URL
+
+WORKDIR /tmp
+
+ENV API_URL "$API_URL"
+COPY ./client ./
+RUN npm install
+RUN npm run build
+
+WORKDIR /usr/src/app
+
+RUN cp /tmp/package.json . && \
+  cp /tmp/production-server.js . && \
+  cp -r /tmp/dist . && \
+  rm -rf /tmp && \
+  npm install --prod
+
+EXPOSE 3002
+CMD ["npm", "run", "serve-prod"]

@@ -34,22 +34,22 @@ If you need to save git log to file use git --no-pager log > git.txt
 
 ## Install
 
-Please run docker-compose.yml first. After that you can run client_react.
+Please run docker-compose.yml first. After that you can run client.
 
 If you use windows you can mode to project folder and run docker.bat
 
 ```js
 # NPM INSTALL
-# drive:/SuperDemo/client_react/
+# drive:/SuperDemo/client/
 
 npm install --prod ( --force if necessary )
 ```
 
-From shell move to "/client_react/server" and execute "npm install --prod" if necessary
+From shell move to "/client/server" and execute "npm install --prod" if necessary
 
 ```js
 # DO NOT FORGET
-# drive:/SuperDemo/client_react/server/
+# drive:/SuperDemo/client/server/
 
 npm install --prod
 ```
@@ -58,8 +58,8 @@ I want to make it automatic during Docker installation ... it's a TODO
 
 ## Use
 
-From Docker you can run dpSuperDemo.client.react on the browser and enjoy my fatigue.
-Inside /client_react/data you have config options.
+From Docker you can run superDemo.client on the browser and enjoy my fatigue.
+Inside /client/data you have config options.
 
 ## manage db
 
@@ -118,14 +118,14 @@ rights may limit how you use the material.
 ```
 .
 ├───.vscode
-├───api
+├───server
 │   ├───bin
 │   ├───data
 │   ├───public
 │   │   └───stylesheets
 │   ├───routes
 │   └───views
-├───client_react
+├───client
 │   ├───public
 │   │   └───assets
 │   │       ├───fonts
@@ -185,7 +185,7 @@ rights may limit how you use the material.
 │   │   ├───styles
 │   │   │   ├───responsive
 │   │   │   └───scss
-│   │   └───typings
+│   │   └───types
 │   └───tests
 ├───mongo
 └───screenShot

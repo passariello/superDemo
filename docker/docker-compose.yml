@@ -1,0 +1,65 @@
+# Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
+# License: MIT
+
+version: "3.1"
+
+services:
+
+  mongodb:
+    restart: always
+    container_name: superDemo.mongodb
+    build:
+      context: ./mongo
+      dockerfile: Dockerfile
+    volumes:
+      - ./mongo/data-node:/data/db
+    ports:
+      - 27017:27017
+    command: mongod --noauth
+    networks:
+      - vnet
+
+  api:
+    restart: always
+    container_name: superDemo.api
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "9000:9000"
+    working_dir: /server
+    command: node ./bin/start.js
+    volumes:
+      - ./server:/api
+      - /server/node_modules
+    entrypoint: ["npm", "start"]
+    depends_on:
+      - mongodb
+    environment:
+      - MONGODB_HOST=mongodb
+      - MONGODB_PORT=27017
+    networks:
+      - vnet
+
+  client:
+    image: node
+    restart: always
+    container_name: superDemo.client
+    build:
+      context: ./client
+      args:
+        API_URL: http://localhost:9000
+    ports:
+      - "3000:3000"
+    working_dir: /client/server
+    command: node start.js
+    volumes:
+      - ./client:/client
+      - /client/node_modules
+    links:
+      - api
+    networks:
+      - vnet
+networks:
+  vnet:
+    driver: bridge
