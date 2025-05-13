@@ -10,7 +10,7 @@ import './styles.scss'
 const CastVote = (props) => {
 
   const stars = 5
-  const [star, setStar] = useState(null)
+  // const [star, setStar] = useState(null)
   const [rate, setRate] = useState(null)
 
   const Validate = (value: number) => {
@@ -26,7 +26,7 @@ const CastVote = (props) => {
       })
     }
 
-    fetch(superDemo.api + superDemo.conf.appAPI + 'rating/', requestOptions)
+    fetch(superDemo.api + superDemo.conf.app.proxy.api + 'rating/', requestOptions)
       .then(response => response.json())
       .then(response => {
 
@@ -50,7 +50,7 @@ const CastVote = (props) => {
   /*********************************************************************/
 
   const getRating = (id) => {
-    fetch(superDemo.api + superDemo.conf.appAPI + 'count/?id=' + id)
+    fetch(superDemo.api + superDemo.conf.app.proxy.api + 'count/?id=' + id)
       .then(res => res.json())
       .then(res => {
         setRate(Number(res[0].rating / res[0].count) || 0)
@@ -88,4 +88,3 @@ const CastVote = (props) => {
 }
 
 export default CastVote
-

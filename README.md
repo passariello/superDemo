@@ -93,11 +93,10 @@ Please, download and install MongoDB Compass from <https://www.mongodb.com/produ
 17) Everything is SPA
 18) All components should be shared between different pages
 
+## dpHelper
 
-## dpHelper, stModal
-
-NPM dpHelper and stModal are developed by Dario Passariello.
-dpHelper is a collection of global function and memory state, store management. stModal are an alert, confirm replacement.
+NPM dpHelper are developed by Dario Passariello.
+dpHelper is a collection of global function and memory state, store management. Layerpro are an alert, confirm replacement.
 Copyright by Dario Passariello
 
 ## License
@@ -130,6 +129,7 @@ rights may limit how you use the material.
 
 ## files
 
+```
 .
 ├───.vscode
 ├───api
@@ -203,6 +203,8 @@ rights may limit how you use the material.
 │   └───tests
 ├───mongo
 └───screenShot
+
+``
 
 ---------------------------------------
 Dario Passariello

@@ -5,7 +5,7 @@ License: MIT
 
 import React, { useEffect, useState } from 'react'
 import { createBrowserHistory } from 'history'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router'
 
 import "./styles.scss"
 

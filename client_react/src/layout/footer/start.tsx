@@ -12,7 +12,7 @@ const Footer = () => {
   return (
 
     <footer>
-      <div><b>{superDemo.conf.appName}</b> - {superDemo.conf.description} Ver. {superDemo.conf.version} </div>
+      <div><b>{superDemo.conf.app.name}</b> - {superDemo.conf.description} Ver. {superDemo.conf.version} </div>
       <div>{superDemo.conf.author.name}, Copyright &copy; {new Date().getFullYear()} </div>
     </footer>
 

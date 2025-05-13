@@ -23,6 +23,7 @@ coverage
 images/**
 node_modules
 webpack.config.js
+webpack.ts
 package.json
 generated-icons/
 *.zip

@@ -4,7 +4,7 @@ License: MIT
 */
 
 import React, { Suspense } from "react"
-import { BrowserRouter as Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router'
 
 import Home from "/src/pages/home/start"
 import About from "/src/pages/about/start"

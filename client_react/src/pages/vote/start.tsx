@@ -6,7 +6,7 @@ License: MIT
 import React, { useEffect, useState } from 'react'
 import CastVote from '/src/components/general/castVote/component'
 import CircularProgress from '/src/components/general/loaders/circular/progress/component'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router'
 
 import "./styles.scss"
 
@@ -53,7 +53,7 @@ function Vote() {
 
     } else {
 
-      fetch(superDemo.api + superDemo.conf.appAPI + 'get' + id + name + other)
+      fetch(superDemo.api + superDemo.conf.app.api + 'get' + id + name + other)
         .then(res => res.json())
         .then(res => {
           setBeersList([...res])
