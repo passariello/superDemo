@@ -14,6 +14,6 @@ cls
 echo "THIS FILE IS TO RUN APP."
 echo "CREATED BY DARIO PASSARIELLO."
 
-echo "Starting dpSuperDemo Docker Compose"
+echo "Starting superDemo Docker Compose"
 
 docker-compose up -d
