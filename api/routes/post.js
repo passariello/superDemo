@@ -3,17 +3,17 @@ Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
 License: MIT
 */
 
-let express = require('express')
-let request = require('request')
-let router = express.Router()
+const
+  express = require('express'),
+  router = express.Router(),
 
-let config = require('../data/config.json')
+  config = require('../data/config.json')
 
 router.post('/', function (req, res, next) {
 
   res.json({})
 
-  // var parse = new URLSearchParams( req._parsedOriginalUrl?.query );
+  // const parse = new URLSearchParams( req.originalUrl?.query );
 
   // // grab in case of ID
   // const id = parse.get('id') ? '/' + parse.get('id') : "";
@@ -22,7 +22,7 @@ router.post('/', function (req, res, next) {
   // const other = parse ? "?" + parse : "";
 
   // // request
-  // var url = config.apiData + id + other ;
+  // vconstar url = config.apiData + id + other ;
 
   // request({
   //   method: 'GET',
@@ -38,4 +38,3 @@ router.post('/', function (req, res, next) {
 })
 
 module.exports = router;
-

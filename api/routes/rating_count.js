@@ -3,8 +3,8 @@ Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
 License: MIT
 */
 
-var mongoose = require('mongoose')
-var RatingSchema = require('./rating_model.js')
+const
+  RatingSchema = require('./rating_model.js')
 
 module.exports = {
   countTotal: function (inputData, callback) {
