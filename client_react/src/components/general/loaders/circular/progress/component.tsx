@@ -3,7 +3,7 @@ Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
 License: MIT
 */
 
-import React, { useEffect, useState } from "react"
+import React from "react"
 import './styles.scss'
 
 const CircularProgress = (props: any) => {

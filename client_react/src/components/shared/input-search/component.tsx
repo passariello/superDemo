@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import classNames from "classnames"
 
 import { InputSearchInterface } from './interface'
@@ -6,19 +6,6 @@ import { InputSearchInterface } from './interface'
 import './styles.scss'
 
 export const InputSearch = (props: InputSearchInterface) => {
-
-  // ONCHANGE
-  const [value, setValue] = useState("")
-
-  const onChange = (e: any) => {
-    setValue(e.target.value)
-  }
-
-  useEffect(() => {
-    if (props?.value) {
-      setValue(props?.value)
-    }
-  }, [])
 
   return (
     <div
@@ -55,5 +42,3 @@ export const InputSearch = (props: InputSearchInterface) => {
   )
 
 }
-
-

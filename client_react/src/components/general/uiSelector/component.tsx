@@ -32,7 +32,7 @@ export const Uiselector = (props) => {
 
   const switchTheme = (e: any, value) => {
 
-    for (let link of style) link?.remove()
+    Array.from(style).forEach(link => link?.remove())
     localStorage.setItem('theme', '')
 
     if (e || value) {
@@ -63,7 +63,7 @@ export const Uiselector = (props) => {
 
     } else {
 
-      for (let link of style) link?.remove()
+      Array.from(style).forEach(link => link?.remove())
       localStorage.setItem('theme', '')
       toggleSwitch.checked = false
 

@@ -3,7 +3,7 @@ Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
 License: MIT
 */
 
-import React, { Fragment, useEffect, useState } from 'react'
+import React, { Fragment } from 'react'
 
 import './styles.scss'
 

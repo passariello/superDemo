@@ -4,24 +4,17 @@ License: MIT
 */
 
 import React, { useEffect, useState } from 'react'
-import { createBrowserHistory } from 'history'
 import { Link, useLocation } from 'react-router'
 
 import "./styles.scss"
 
-const history = createBrowserHistory()
 const superDemo = window.superDemo
-
-const NavMenu = (item) => {
-  console.log(item)
-  history.push('/' + item + '/')
-  return true
-}
 
 const Nav = () => {
 
-  const [selected, setSelected] = useState(null)
-  const location = useLocation()
+  const
+    [selected, setSelected] = useState(null),
+    location = useLocation()
 
   useEffect(() => {
     setSelected(dphelper.path.rail[0])
@@ -48,7 +41,6 @@ const Nav = () => {
             </li>
 
           )
-          {/* return <li key={index} onClick={ () => NavMenu( item.language.en )}> {item.language.en} </li> */ }
         })}
       </ul>
 
