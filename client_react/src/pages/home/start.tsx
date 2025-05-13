@@ -14,7 +14,7 @@ function Home() {
     <Fragment>
       <div className="homepage">
 
-        <h2>Edition 2022!</h2>
+        <h2>Edition {new Date().getFullYear()}!</h2>
         <br />
         <fieldset>
           <legend>Video</legend>

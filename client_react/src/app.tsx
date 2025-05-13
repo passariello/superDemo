@@ -12,7 +12,7 @@ import Footer from "/src/layout/footer/start"
 import Aside from '/src/layout/aside/start'
 
 import CircularProgress from '/src/components/general/loaders/circular/progress/component'
-import { useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router'
 
 function App() {
 

@@ -7,7 +7,7 @@ const pjson = require('../package.json')
 const express = require('express')
 const path = require('path')
 const app = express()
-const port = pjson.appPort
+const port = pjson.app.port
 
 // grab dyna uri
 const url = __dirname.replace('server', '')
@@ -21,4 +21,3 @@ app.get('*', (req, res) => {
 // start the microscopic server!
 console.log('SuperDemo Web Server Started: ', port)
 app.listen(port);
-

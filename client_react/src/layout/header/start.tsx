@@ -18,7 +18,7 @@ const Header = () => {
       <div>
         <img id="logo" src="/assets/logos/logo.png" alt="logo" />
         <b>SuperDemo Beer Fest! </b><span> Now open, vote your beer!</span>
-        <span className="year"> 2022 </span>
+        <span className="year"> {new Date().getFullYear()} </span>
       </div>
       <img id="beers" src="/assets/images/beers.png" alt="beers" />
 

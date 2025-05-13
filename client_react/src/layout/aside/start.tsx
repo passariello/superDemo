@@ -3,10 +3,10 @@ Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
 License: MIT
 */
 
-import HorizontalProgress from '/src/components/general/loaders/horizontal/progress/component'
-import Music from '/src/components/general/music/component'
-import React, { useRef } from 'react'
-import { Link } from 'react-router-dom'
+// import HorizontalProgress from '/src/components/general/loaders/horizontal/progress/component'
+// import Music from '/src/components/general/music/component'
+import React from 'react'
+import { Link } from 'react-router'
 
 import "./styles.scss"
 
@@ -41,7 +41,3 @@ const Aside = (props) => {
 }
 
 export default Aside
-
-
-
-
