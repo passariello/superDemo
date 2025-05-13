@@ -6,7 +6,6 @@ copyright (c) 2022 by dario Passariello
 ![Node-js](https://img.shields.io/badge/Node-js-006b98?logo=Node-js&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-006b98?logo=Express&logoColor=white)
 ![React-js](https://img.shields.io/badge/React-js-006b98?logo=React-js&logoColor=white)
-![Vue-js](https://img.shields.io/badge/Vue-js-006b98?logo=Vue-js&logoColor=white)
 ![Mongodb](https://img.shields.io/badge/Mongodb-006b98?logo=Mongodb&logoColor=white)
 ![Api](https://img.shields.io/badge/Api-006b98?logo=Api&logoColor=white)
 ![dpHelper](https://img.shields.io/badge/dpHelper-npm-green?logo=dpHelper&logoColor=white)
@@ -23,7 +22,6 @@ I use these technologies:
 1) Docker for Mongodb as a machine on port 27017.
 2) Docker api server on node machine port 9000.
 3) Docker Client React on node machine on port 3000
-4) Docker Client Vue on node machine on port 3001
 
 ## Live Demo link
 
@@ -36,25 +34,22 @@ If you need to save git log to file use git --no-pager log > git.txt
 
 ## Install
 
-Please run docker-compose.yml first. After that you can run client_react. Sorry but the Vue version it's not ready at the moment.
+Please run docker-compose.yml first. After that you can run client_react.
 
 If you use windows you can mode to project folder and run docker.bat
 
 ```js
 # NPM INSTALL
 # drive:/SuperDemo/client_react/
-# drive:/SuperDemo/client_vue/
 
 npm install --prod ( --force if necessary )
 ```
 
 From shell move to "/client_react/server" and execute "npm install --prod" if necessary
-From shell move to "/client_vue/server" and execute "npm install --prod" if necessary
 
 ```js
 # DO NOT FORGET
 # drive:/SuperDemo/client_react/server/
-# drive:/SuperDemo/client_vue/server/
 
 npm install --prod
 ```
@@ -74,9 +69,8 @@ Please, download and install MongoDB Compass from <https://www.mongodb.com/produ
 
 1) Docker setup in all parts
 2) React version with webpack installed
-3) Vue boilerplate works but not project is installed
-4) Mongodb server works
-5) API punkapi full support
+3) Mongodb server works
+4) API punkapi full support
 
 ## about project
 
@@ -99,10 +93,6 @@ Please, download and install MongoDB Compass from <https://www.mongodb.com/produ
 17) Everything is SPA
 18) All components should be shared between different pages
 19) redux is installed but not used... use dpHelper instead.
-
-## Vue version
-
-Coming soon
 
 ## dpHelper, stModal
 
@@ -217,26 +207,6 @@ rights may limit how you use the material.
 │   │   │   └───scss
 │   │   └───typings
 │   └───tests
-├───client_vue
-│   ├───build
-│   ├───config
-│   ├───demo
-│   ├───dist
-│   │   └───static
-│   │       ├───css
-│   │       └───js
-│   ├───server
-│   ├───src
-│   │   ├───assets
-│   │   ├───components
-│   │   └───router
-│   ├───static
-│   └───test
-│       ├───e2e
-│       │   ├───custom-assertions
-│       │   └───specs
-│       └───unit
-│           └───specs
 ├───mongo
 └───screenShot
 
