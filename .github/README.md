@@ -118,7 +118,7 @@ rights may limit how you use the material.
 ```
 .
 ├───.vscode
-├───api
+├───server
 │   ├───bin
 │   ├───data
 │   ├───public
