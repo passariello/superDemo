@@ -7,7 +7,7 @@ services:
 
   mongodb:
     restart: always
-    container_name: dpSuperDemo.mongodb
+    container_name: superDemo.mongodb
     build:
       context: ./mongo
       dockerfile: Dockerfile
@@ -21,7 +21,7 @@ services:
 
   api:
     restart: always
-    container_name: dpSuperDemo.api
+    container_name: superDemo.api
     build:
       context: ./server
       dockerfile: Dockerfile
@@ -44,7 +44,7 @@ services:
   client:
     image: node
     restart: always
-    container_name: dpSuperDemo.client.react
+    container_name: superDemo.client
     build:
       context: ./client
       args:
