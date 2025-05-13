@@ -1,86 +1,86 @@
 /*
 Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
-License: CC BY-NC-ND 4.0
+License: MIT
 */
 
-:root{
-  --search-height:70px;
+:root {
+  --search-height: 70px;
 }
 
-#beerList{
+#beerList {
   position: absolute;
-  top:90px;
-  left:40px;
-  right:20px;
-  bottom:0;
+  top: 90px;
+  left: 40px;
+  right: 20px;
+  bottom: 0;
 
-  .beerSearch{
-    background: rgba(228,228,228,.1);
-    padding:10px;
-    margin:-20px 0;
-    border-radius:10px;
-    border:3px solid rgba(128,128,128,.3);
-    height:var( --search-height );
+  .beerSearch {
+    background: rgba(228, 228, 228, .1);
+    padding: 10px;
+    margin: -20px 0;
+    border-radius: 10px;
+    border: 3px solid rgba(128, 128, 128, .3);
+    height: var(--search-height);
 
-    > form:nth-of-type(1){
-      float:left;
+    >form:nth-of-type(1) {
+      float: left;
 
-      label{
-        display:block;
-        padding:5px 10px 5px 15px;
-        margin-top:-10px;
+      label {
+        display: block;
+        padding: 5px 10px 5px 15px;
+        margin-top: -10px;
       }
 
-      input[type=search]{
+      input[type=search] {
         border-radius: 25px 0 0 25px;
-        padding:5px 10px 5px 25px;
+        padding: 5px 10px 5px 25px;
       }
 
-      input[type=submit]{
+      input[type=submit] {
         border-radius: 0 25px 25px 0;
-        padding:5px 20px;
-        background: var( --_SuperDemo-nav-background );
-        color:white;
+        padding: 5px 20px;
+        background: var(--superDemo-nav-background);
+        color: white;
 
-        &:hover{
+        &:hover {
           background: orange;
-          cursor:pointer;
+          cursor: pointer;
         }
 
       }
     }
 
-    > div:nth-of-type(1){
-      float:right;
+    >div:nth-of-type(1) {
+      float: right;
 
-      ul{
-        display:flex;
-        position:absolute;
-        right:10px;
-        top:14px;
-        margin:0;
-        padding:0;
+      ul {
+        display: flex;
+        position: absolute;
+        right: 10px;
+        top: 14px;
+        margin: 0;
+        padding: 0;
 
-        li{
+        li {
 
-          a{
-            display:flex;
+          a {
+            display: flex;
             justify-content: center;
             align-items: center;
-            border-radius:50%;
-            background: var( --_SuperDemo-nav-background );
-            width:30px;
-            height:30px;
-            margin:0 2px;
+            border-radius: 50%;
+            background: var(--superDemo-nav-background);
+            width: 30px;
+            height: 30px;
+            margin: 0 2px;
             transition: 300ms;
 
-            &:hover{
+            &:hover {
               background: orange;
             }
 
           }
 
-          a.selected{
+          a.selected {
             background: orangered;
           }
         }
@@ -91,64 +91,64 @@ License: CC BY-NC-ND 4.0
   }
 
   .beer {
-    position:absolute;
-    top:calc( var( --search-height ) - 12px );
-    left:0;
-    right:0;
-    bottom:0;
-    overflow:auto;
+    position: absolute;
+    top: calc(var(--search-height) - 12px);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
 
-    > ul {
-      margin:0 5px 0 0;
-      padding:0;
+    >ul {
+      margin: 0 5px 0 0;
+      padding: 0;
 
-      > li{
-        background: rgba(128,128,128,.1);
-        padding:10px;
-        margin:0 0 5px 0;
-        border-radius:10px;
-        border:3px solid rgba(128,128,128,.3);
-        transition:500ms;
-        position:relative;
-        min-height:120px;
+      >li {
+        background: rgba(128, 128, 128, .1);
+        padding: 10px;
+        margin: 0 0 5px 0;
+        border-radius: 10px;
+        border: 3px solid rgba(128, 128, 128, .3);
+        transition: 500ms;
+        position: relative;
+        min-height: 120px;
         //backdrop-filter: blur(5px);
 
-        &:hover{
-          border-color:rgba(24, 63, 190, .5);
+        &:hover {
+          border-color: rgba(24, 63, 190, .5);
         }
 
-        .beerThumb{
-          position:absolute;
-          width:80px;
-          height:80px;
-          text-align:center
+        .beerThumb {
+          position: absolute;
+          width: 80px;
+          height: 80px;
+          text-align: center
         }
 
-        .beerInfo{
-          width:100%;
-          padding:0 0 0 90px;
-          font-size:1.1em;
+        .beerInfo {
+          width: 100%;
+          padding: 0 0 0 90px;
+          font-size: 1.1em;
 
-          > div:nth-of-type(1){
-            font-size:1.5em;
-            background:rgba(24, 63, 190, .5);
-            padding:5px;
-            border-radius:5px;
-            position:relative;
+          >div:nth-of-type(1) {
+            font-size: 1.5em;
+            background: rgba(24, 63, 190, .5);
+            padding: 5px;
+            border-radius: 5px;
+            position: relative;
 
-            > div:nth-of-type(1){
-              position:absolute;
-              right:0;
-              top:0;
+            >div:nth-of-type(1) {
+              position: absolute;
+              right: 0;
+              top: 0;
             }
 
           }
 
-          > div:nth-of-type(2),
-          > div:nth-of-type(3),
-          > div:nth-of-type(4),
-          > div:nth-of-type(5){
-            padding:5px;
+          >div:nth-of-type(2),
+          >div:nth-of-type(3),
+          >div:nth-of-type(4),
+          >div:nth-of-type(5) {
+            padding: 5px;
           }
 
         }

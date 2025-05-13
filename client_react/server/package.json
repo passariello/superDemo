@@ -7,7 +7,7 @@
     "start": "node start.js"
   },
   "author": "",
-  "license": "CC BY-NC-ND 4.0",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.21.1",
     "fs": "^0.0.1-security",

@@ -1,0 +1,66 @@
+/*
+Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
+License: MIT
+*/
+
+.progressRaised {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  right: 30px;
+  padding: 0;
+  //background-color: rgba(0,0,0,.05);
+  //animation: isStop 0s ease-in 12s forwards;
+  z-index: 10000;
+  display: none;
+}
+
+.progress {
+  position: absolute;
+  left: 5px;
+  right: 3px;
+  height: 5px;
+  margin: 0;
+  padding: 0;
+  // background-color: #09549b31;
+  // animation: isStop 0s ease-in 12s forwards;
+  overflow: hidden;
+  border-radius: 15px;
+  z-index: 100;
+}
+
+.progress .color {
+  position: absolute;
+  background-color: #549b3a;
+  margin: auto;
+  width: 0px;
+  height: 100%;
+  border-radius: 15px;
+  // animation: progres 0s ease-in 10s forwards;
+  animation: progress .3s linear infinite;
+  opacity: .8
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+
+  25% {
+    width: 50%;
+  }
+
+  50% {
+    width: 75%;
+  }
+
+  75% {
+    width: 85%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+;

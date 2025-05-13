@@ -1,25 +1,25 @@
 /*
 Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
-License: CC BY-NC-ND 4.0
+License: MIT
 */
 
 import React from "react"
-import styles from './style.less'
+import './styles.scss'
 
-export const HorizontalSave = ( props: any ) => {
+export const HorizontalSave = (props: any) => {
 
   return (
 
     <React.Fragment>
 
-    <div
-      id={ props?.id }
-      className={ styles.progressRaised }
-    >
-      <div className={ styles.progress }>
-        <div className={ styles.color }></div>
+      <div
+        id={props?.id}
+        className="progressRaised"
+      >
+        <div className="progress">
+          <div className="color"></div>
+        </div>
       </div>
-    </div>
 
     </React.Fragment>
 

@@ -1,0 +1,18 @@
+{
+  "trailingComma": "none",
+  "prettier.trailingComma": "none",
+  "tabWidth": 2,
+  "semi": false,
+  "useTabs": false,
+  "singleQuote": true,
+  "printWidth": 1000,
+  "overrides": [
+    {
+      "files": "packages/**/package-lock.json",
+      "options": {
+        "tabWidth": 2,
+        "useTabs": false
+      }
+    }
+  ]
+}

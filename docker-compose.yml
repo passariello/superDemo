@@ -1,5 +1,5 @@
 # Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
-# License: CC BY-NC-ND 4.0
+# License: MIT
 
 version: "3.1"
 
@@ -40,7 +40,7 @@ services:
       - MONGODB_PORT=27017
     networks:
       - vnet
-   
+
   client_react:
     image: node
     restart: always
@@ -60,7 +60,7 @@ services:
       - api
     networks:
       - vnet
-      
+
   client_vue:
     image: node
     restart: always

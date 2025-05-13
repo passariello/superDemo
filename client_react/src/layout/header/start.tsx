@@ -1,11 +1,11 @@
 /*
 Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
-License: CC BY-NC-ND 4.0
+License: MIT
 */
 
-import React from 'react';
+import React from 'react'
 
-import Uiselector from 'Components/general/uiSelector/component'
+import Uiselector from '/src/components/general/uiSelector/component'
 
 import "./styles.scss"
 
@@ -25,18 +25,18 @@ const Header = () => {
 
       <Uiselector
         style={{
-          position:'absolute',
+          position: 'absolute',
           top: '60px',
           right: '30px',
           zIndex: 100,
-          transform:'scale(80%)'
-         }}
+          transform: 'scale(80%)'
+        }}
       />
       {/* <Options /> */}
 
     </header>
 
-  );
+  )
 
 }
 

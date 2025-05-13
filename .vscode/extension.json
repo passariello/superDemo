@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "alefragnani.project-manager",
+    "donjayamanne.githistory",
+    "mhutchie.git-graph",
+    "mgmcdermott.vscode-language-babel",
+    "eamodio.gitlens",
+    "ms-vscode.vscode-typescript-next",
+    "ms-vscode.js-debug-nightly",
+    "pkief.material-icon-theme",
+    "jock.svg",
+    "simonsiefke.svg-preview",
+    "dbaeumer.vscode-eslint"
+  ]
+}

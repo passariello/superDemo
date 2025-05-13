@@ -1,53 +1,53 @@
 /*
 Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
-License: CC BY-NC-ND 4.0
+License: MIT
 */
 
-:root{
-  --blur:4px;
-  --color_1:white;
-  --color_2:black;
+:root {
+  --blur: 4px;
+  --color_1: white;
+  --color_2: black;
   --contrast: contrast(10);
   --transiction: all .3s ease-out;
-  --height:60px;
+  --height: 60px;
 }
 
 $options: 3;
 
 /*****************************************************/
 
-#UIauto{
-  display:none;
+#UIauto {
+  display: none;
 }
 
-#switchUI{
-  position:absolute;
-  top:0;
-  right:0;
+#switchUI {
+  position: absolute;
+  top: 0;
+  right: 0;
   width: 110px;
-  padding:0;
-  background:transparent;
-  z-index:10;
+  padding: 0;
+  background: transparent;
+  z-index: 10;
   mix-blend-mode: screen;
 }
 
 #wrapper {
-  position:relative;
+  position: relative;
   filter: var(--contrast);
-  background:var(--color_2);
-  padding:0 10px;
+  background: var(--color_2);
+  padding: 0 10px;
 
   #slider {
-    position:relative;
-    margin:0;
-    padding:0;
+    position: relative;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: row;
     align-content: stretch;
-    width:100%;
-    height: var( --height );
+    width: 100%;
+    height: var(--height);
     user-select: none;
-    filter: blur( var(--blur) );
+    filter: blur(var(--blur));
 
     &::before {
       content: " ";
@@ -101,15 +101,15 @@ $options: 3;
 
     }
 
-    input[type=radio]{
+    input[type=radio] {
 
-      position:absolute;
-      z-index:3;
+      position: absolute;
+      z-index: 3;
       display: none;
 
       &:checked {
 
-        + label::after {
+        +label::after {
           border-width: 8px;
           transform: translate(-50%, -50%);
           width: 20px;
@@ -118,7 +118,7 @@ $options: 3;
 
         @for $i from 1 through $options {
 
-          &:nth-child( #{( $i * 2 ) - 1 } ) ~ #dot {
+          &:nth-child(#{( $i * 2 ) - 1 })~#dot {
             left: #{( $i * 33.33% ) - 16.6% };
           }
 
@@ -135,7 +135,7 @@ $options: 3;
       display: block;
       position: absolute;
       top: 50%;
-      left:0;
+      left: 0;
       background: var(--color_2);
       border-radius: 50%;
       transition: var(--transiction);

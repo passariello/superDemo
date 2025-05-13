@@ -1,9 +1,9 @@
 /*
 Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
-License: CC BY-NC-ND 4.0
+License: MIT
 */
 
-#SuperDemo{
+#SuperDemo {
 
   * {
     box-sizing: border-box;
@@ -55,7 +55,8 @@ License: CC BY-NC-ND 4.0
     border: 0;
   }
 
-  ol, ul {
+  ol,
+  ul {
     list-style: none;
   }
 
@@ -74,8 +75,9 @@ License: CC BY-NC-ND 4.0
     content: none;
   }
 
-  b, strong{
-    font-weight:600;
+  b,
+  strong {
+    font-weight: 600;
   }
 
   table {
@@ -83,9 +85,8 @@ License: CC BY-NC-ND 4.0
     border-spacing: 0;
   }
 
-  input::-moz-focus-inner{
+  input::-moz-focus-inner {
     border: 0;
   }
 
 }
-

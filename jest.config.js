@@ -1,18 +1,38 @@
+/** @type {import('ts-jest').JestConfigWithTsJest} **/
 module.exports = {
-  roots: ['<rootDir>/tests'],
-  preset: "ts-jest",
+
+  setupFilesAfterEnv: ['./jest.setup.js'],
+  testEnvironment: 'jsdom',
+
+  modulePathIgnorePatterns: ["./dist"],
+
+  globals: {
+    'ts-jest': {
+      tsconfig: '<rootDir>/tsconfig.json',
+      stringifyContentPathRegex: '\\.(html|svg)$'
+    },
+    "arsenal": {}
+  },
+
+  displayName: "Arsenal 3D",
+  globals: {
+    PROJECT_NAME: "Arsenal 3D"
+  },
+  bail: 20,
+  verbose: true,
+
+  preset: 'ts-jest',
+  testEnvironment: "node",
   transform: {
-    "^.+\\.(ts|tsx)$": "ts-jest",
-    "^.+\\.(js)$": "babel-jest",
+    "^.+\\.(ts|js)x?$": ["ts-jest",{}],
   },
-  transformIgnorePatterns: [],
-  testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(ts|tsx)?$',
-  moduleFileExtensions: ["ts", "tsx", "js", "json"],
-  testEnvironment: "jest-environment-jsdom",
-  moduleNameMapper: {
-    ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2|svg)$": "identity-obj-proxy",
-  },
-  setupFiles: [
-    "jsdom-worker"
-  ]
+  testMatch: [
+    "**/__tests__/**/*.[jt]s?(x)",
+    "**/?(*.)+(spec|test).[tj]s?(x)"
+  ],
+
+  globals: {
+    arsenal: {}
+  }
+
 };

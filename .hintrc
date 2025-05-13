@@ -1,11 +1,21 @@
 {
-  "connector": {
-      "name": "connectorName"
-  },
-  "formatters": [],
-  "parsers": [],
+  "extends": [
+    "development"
+  ],
   "hints": {
-      "no-inline-styles": "error"
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "width: fit-content"
+        ]
+      }
+    ]
   },
-  "hintsTimeout": 120000
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not and_ff <= 126",
+    "not firefox <= 126"
+  ]
 }

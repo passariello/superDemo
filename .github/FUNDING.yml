@@ -9,9 +9,4 @@ community_bridge: # Replace with a single Community Bridge project-name e.g., cl
 liberapay: passariello
 issuehunt: passariello
 otechie: # Replace with a single Otechie username
-custom:
-  [
-    "https://dario.passariello.ca",
-    "https://www.paypal.me/dariopassariello",
-    "https://www.indiegogo.com/individuals/28513718",
-  ]
+custom: ["https://dario.passariello.ca", "https://www.paypal.me/dariopassariello", "https://www.indiegogo.com/individuals/28513718"]

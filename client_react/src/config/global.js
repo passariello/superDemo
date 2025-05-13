@@ -1,37 +1,37 @@
 /*
 Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
-License: CC BY-NC-ND 4.0
+License: MIT
 */
 
 // EVENT SETUP
 /******************************************************************************/
 
-let e;
-if (!e) e = window.event;
+let e
+if (!e) e = window.event
 
 /******************************************************************************/
 
-import './styles.js';
-import './scripts.js';
+import './styles.js'
+import './scripts.js'
 
 /******************************************************************************/
 
-window.name = "SuperDemo";
+window.name = "SuperDemo"
 
-const pjson = require('../../package.json');
+const pjson = require('../../package.json')
 
-const _SuperDemo = window._SuperDemo = {};
+const superDemo = window.superDemo = {}
 
-_SuperDemo.aside = require("../data/aside.json");
-_SuperDemo.nav = require("../data/nav.json");
-_SuperDemo.conf = pjson;
-_SuperDemo.music = ''; //autoplay'
+superDemo.aside = require("../data/aside.json")
+superDemo.nav = require("../data/nav.json")
+superDemo.conf = pjson
+superDemo.music = '' //autoplay'
 
-_SuperDemo.api = ( window.location.hostname === "localhost" ||  window.location.hostname === "127.0.0.1" ) ? _SuperDemo.conf.apiDev + '/'
-: '//' + window.location.hostname + _SuperDemo.conf.apiProd;
+superDemo.api = (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") ? superDemo.conf.apiDev + '/'
+  : '//' + window.location.hostname + superDemo.conf.apiProd
 
-if ( location.hostname === "localhost" || location.hostname === "127.0.0.1" ){
-  console.debug( "This message it's only from localhost: type _SuperDemo into console to see all options",  _SuperDemo );
+if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+  console.debug("This message it's only from localhost: type superDemo into console to see all options", superDemo)
 }
 
 

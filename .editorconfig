@@ -5,9 +5,26 @@ charset = utf-8
 tab_width = 2
 indent_size = 2
 indent_style = space
-end_of_line = lf
+end_of_line = CRLF
 insert_final_newline = true
 trim_trailing_whitespace = true
+max_line_length = off
 
 [*.md]
 trim_trailing_whitespace = false
+
+[*.js]
+block_comment_start = /*
+block_comment = *
+block_comment_end = */
+
+[*.*]
+indent_size = 2
+indent_style = space
+max_line_length = off
+
+[test/{dotdot,resolver,module_dir,multirepo,node_path,pathfilter,precedence}/**/*]
+indent_style = off
+indent_size = off
+max_line_length = off
+insert_final_newline = off

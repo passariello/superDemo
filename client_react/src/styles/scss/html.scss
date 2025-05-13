@@ -1,182 +1,195 @@
 /*
 Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
-License: CC BY-NC-ND 4.0
+License: MIT
 */
-html{
-  position:relative;
+html {
+  position: relative;
   width: 100%;
-  height:100%;
-  margin:0;
-  padding:0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 
-  &:before{
-    content:"";
-    width:200%;
-    height:500px;
-    background:rgba(0, 81, 255, 0.1);
-    position:fixed;
-    top:0;
-    left:-50%;
-    z-index:0;
-    transform:skew(15deg, 15deg);
+  &:before {
+    content: "";
+    width: 200%;
+    height: 500px;
+    background: rgba(0, 81, 255, 0.1);
+    position: fixed;
+    top: 0;
+    left: -50%;
+    z-index: 0;
+    transform: skew(15deg, 15deg);
   }
 
-  &:after{
-    content:"";
-    width:200%;
-    height:800px;
-    background:rgba(42, 75, 146, 0.1);
-    position:fixed;
-    bottom:-50%;
-    left:-50%;
-    z-index:0;
-    transform:skew(-15deg, -10deg);
+  &:after {
+    content: "";
+    width: 200%;
+    height: 800px;
+    background: rgba(42, 75, 146, 0.1);
+    position: fixed;
+    bottom: -50%;
+    left: -50%;
+    z-index: 0;
+    transform: skew(-15deg, -10deg);
   }
 
 }
 
-body{
-  position:relative;
+body {
+  position: relative;
   width: 100%;
-  height:100%;
+  height: 100%;
   min-height: 500px;
   min-width: 950px;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 
 
-  &:before{
-    content:"";
+  &:before {
+    content: "";
     width: 100%;
-    height:100%;
-    top:0;
-    left:0;
-    position:fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
     background-image: url('/public/assets/images/background.jpg');
     background-size: cover;
-    filter:grayscale(100%) contrast(150%) brightness(80%);
-    mix-blend-mode:overlay;
-    opacity:1;
-    z-index:0;
+    filter: grayscale(100%) contrast(150%) brightness(80%);
+    mix-blend-mode: overlay;
+    opacity: 1;
+    z-index: 0;
   }
 
-  &:after{
-    content:"";
-    position:absolute;
-    bottom:0;
-    left:-260px;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -260px;
     background-image: url('/public/assets/images/114.png');
-    width:492px;
-    height:315px;
-    opacity:1;
-    z-index:3;
+    width: 492px;
+    height: 315px;
+    opacity: 1;
+    z-index: 3;
   }
 
 }
 
-#SuperDemo{
-  color: var( --_SuperDemo-body-color );
-  background: var( --_SuperDemo-body-background-color );
-  max-width:1500px;
-  padding:0;
-  margin:0 auto;
+#SuperDemo {
+  color: var(--superDemo-body-color);
+  background: var(--superDemo-body-background-color);
+  max-width: 1500px;
+  padding: 0;
+  margin: 0 auto;
   overflow: hidden;
   font-family: "Lato", Arial, Helvetica, sans-serif;
   font-size: 1em !important;
   letter-spacing: .02em;
   cursor: default;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
-  .noshow{
-    display:none;
+  .noshow {
+    display: none;
   }
 
-  #root{
-    width:100%;
-    height:100%;
+  #root {
+    width: 100%;
+    height: 100%;
   }
 
-  a         {text-decoration: none;}
-  a:link    {color:var( --_SuperDemo-alink );}
-  a:visited {color:var( --_SuperDemo-avisited );}
-  a:hover   {color:var( --_SuperDemo-ahover );}
-  a:active  {color:var( --_SuperDemo-active );}
-
-  small{
-    font-size:.75em;
-    line-height:auto;
+  a {
+    text-decoration: none;
   }
 
-  h1,h2,h3,h4,h5,h6{
-    font-size:1.8em;
-    font-weight:100;
+  a:link {
+    color: var(--superDemo-alink);
+  }
+
+  a:visited {
+    color: var(--superDemo-avisited);
+  }
+
+  a:hover {
+    color: var(--superDemo-ahover);
+  }
+
+  a:active {
+    color: var(--superDemo-active);
+  }
+
+  small {
+    font-size: .75em;
+    line-height: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.8em;
+    font-weight: 100;
     column-span: all;
-    margin:10px 0 5px 0;
-    opacity:.8;
+    margin: 10px 0 5px 0;
+    opacity: .8;
   }
 
-  hr{
-    position:relative;
-    display:block;
-    width:100%;
-    height:5px;
-    background-color:rgba(255,255,255,.1);
-    margin:0 0 8px 0;
-    border-top:1px solid rgba(0,0,0,.4);
-    border-radius:5px;
-    overflow:hidden;
+  hr {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: rgba(255, 255, 255, .1);
+    margin: 0 0 8px 0;
+    border-top: 1px solid rgba(0, 0, 0, .4);
+    border-radius: 5px;
+    overflow: hidden;
   }
 
   header,
   nav,
   aside,
   main,
-  footer{
-    border-color: rgba(255,255,255,.2);
+  footer {
+    border-color: rgba(255, 255, 255, .2);
     border-style: solid;
   }
 
-  fieldset{
-    position:relative;
-    border:1px solid rgba(255,255,255,.2);
-    background: rgba(255,255,255,.02);
-    border-radius:6px;
-    margin-bottom:15px;
-    padding:20px 60px;
+  fieldset {
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, .2);
+    background: rgba(255, 255, 255, .02);
+    border-radius: 6px;
+    margin-bottom: 15px;
+    padding: 20px 60px;
   }
 
-  legend{
-    margin-left:-30px;
-    border:1px solid rgba(255,255,255,.2);
-    background: rgba(255,255,255,.2);
-    font-size:.8em;
+  legend {
+    margin-left: -30px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    background: rgba(255, 255, 255, .2);
+    font-size: .8em;
     text-transform: uppercase;
-    border-radius:6px;
-    padding:10px 20px;
-    line-height:1em;
+    border-radius: 6px;
+    padding: 10px 20px;
+    line-height: 1em;
   }
 
 
 }
 
-#demo{
-  position:relative;
-  border:1px orange solid !important;
+#demo {
+  position: relative;
+  border: 1px orange solid !important;
   background: rgba(253, 247, 179, 0.671);
-  padding:10px;
-  text-align:center;
-  margin:0 0 10px 0;
-  z-index:10;
-  border-radius:25px;
+  padding: 10px;
+  text-align: center;
+  margin: 0 0 10px 0;
+  z-index: 10;
+  border-radius: 25px;
 
-  a:hover{
+  a:hover {
     color: red;
   }
 }
-
-
-
-
-
-
