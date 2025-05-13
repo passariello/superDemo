@@ -1,13 +1,13 @@
 FROM node:latest
 ARG API_URL
 
-WORKDIR /client_react
-COPY ./ /client_react/
+WORKDIR /client
+COPY ./ /client/
 RUN npm install --force && \
-		npm run build
+  npm run build
 
-WORKDIR /client_react/server
-COPY ./ /client_react/server
+WORKDIR /client/server
+COPY ./ /client/server
 RUN npm install --prod
 
 WORKDIR /tmp
@@ -19,10 +19,10 @@ RUN npm run build
 WORKDIR /usr/src/app
 
 RUN cp /tmp/package.json . && \
-    cp /tmp/production-server.js . && \
-    cp -r /tmp/dist . && \
-    rm -rf /tmp && \
-    npm install --prod
+  cp /tmp/production-server.js . && \
+  cp -r /tmp/dist . && \
+  rm -rf /tmp && \
+  npm install --prod
 
 EXPOSE 3000
 CMD ["npm", "run", "serve-prod"]

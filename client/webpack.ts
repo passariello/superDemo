@@ -28,18 +28,9 @@ module.exports = (env: any, args: any) => {
       SOCKET: packs.app.socket
     }
 
+  console.table(packs.author)
   console.table(packs.contributors)
-
   console.log(constants)
-
-  // console.table(
-  //   Object.entries(constants).map(o => {
-  //     return {
-  //       key: o[0],
-  //       value: o[1]
-  //     }
-  //   })
-  // )
 
   return {
 
