@@ -1,58 +1,59 @@
 {
-  "compilerOptions" : {
-    "lib" : [
-      "es2021",
-      "es2020",
-      "es2016.array.include",
-      "es2017.object",
-      "es5",
-      "es6",
-      "dom",
-      "dom.iterable"
+  "compilerOptions": {
+    "lib": [
+      "es2022",
+      "dom"
     ],
+    "allowUmdGlobalAccess": true,
+    "strict": true,
+    "noEmit": false,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
     "importHelpers": true,
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "baseUrl" : ".",
-    "outDir" : "./dist/",
-    "module" : "commonjs",
-    "preserveConstEnums" : true,
-    "removeComments" : true,
-    "sourceMap" : true,
-    "target" : "es2021",
-    "moduleResolution" : "node",
-    "allowJs" : true,
-    "noEmit" : true,
-    "strict" : true,
-    "esModuleInterop" : true,
-    "jsx" : "react",
-    "strictNullChecks" : false,
-    "noImplicitAny" : false,
-    "strictPropertyInitialization" : false,
-
+    "noImplicitAny": false,
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "sourceMap": false,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false,
+    "jsx": "react",
+    "moduleDetection": "force",
+    "module": "CommonJS",
+    "baseUrl": ".",
+    "outDir": "./dist/",
+    "target": "es2022",
+    "moduleResolution": "node",
+    "rootDirs": [
+      "./"
+    ],
     "paths": {
-      "Config/*":       ["src/config/*"],
-      "Components/*":   ["src/components/*"],
-      "Data/*":         ["src/data/*"],
-      "Layout/*":       ["src/layout/*"],
-      "Pages/*":        ["src/pages/*"],
-      "Scripts/*":      ["src/scripts/*"],
-      "Styles/*":       ["src/styles/*"],
-      "Root/*":         ["src/*"]
+      "/*": [
+        "./*"
+      ]
     }
-
   },
-
-  "includes" : [
-    "./*"
+  "types": [
+    "node"
   ],
-
+  "typeRoots": [
+    "./src/types/*"
+  ],
   "exclude": [
     "node_modules",
-    ".OLD"
+    "private",
+    "archive",
+    "*backup",
+    "dist",
+    ".old*",
+    ".OLD*",
+    "#OLD*",
+    "@OLD*",
   ]
-
 }

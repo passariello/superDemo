@@ -1,37 +1,37 @@
 /*
 Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
-License: CC BY-NC-ND 4.0
+License: MIT
 */
 
-:root{
-  --nav-left:160px;
+:root {
+  --nav-left: 160px;
 }
 
-nav{
+nav {
 
-  position:absolute;
-  left:var( --nav-left );
-  right:10px;
-  top: var( --_SuperDemo-header-height );
-  height: var( --_SuperDemo-nav-height );
+  position: absolute;
+  left: var(--nav-left);
+  right: 10px;
+  top: var(--superDemo-header-height);
+  height: var(--superDemo-nav-height);
   border-width: 0 0 1px 0;
-  background: var( --_SuperDemo-nav-background );
-  font-size:.8em;
+  background: var(--superDemo-nav-background);
+  font-size: .8em;
   text-transform: uppercase;
-  border-radius:0 0 25px 25px;
+  border-radius: 0 0 25px 25px;
 
-  ul{
-    position:relative;
-    margin:0;
-    padding:2px 15px 0 50px;
+  ul {
+    position: relative;
+    margin: 0;
+    padding: 2px 15px 0 50px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    z-index:12;
+    z-index: 12;
 
-    li{
+    li {
 
-      a{
+      a {
         margin: 0 2px;
         padding: 10px 35px;
         display: flex;
@@ -39,12 +39,12 @@ nav{
         justify-content: center;
         text-align: center;
         align-content: center;
-        border-radius:4px;
+        border-radius: 4px;
         transition: 300ms;
         white-space: nowrap;
-        background: var( --_SuperDemo-nav-background );
+        background: var(--superDemo-nav-background);
 
-        &:hover{
+        &:hover {
           background: #007acc;
         }
 
@@ -54,15 +54,15 @@ nav{
 
   }
 
-  .selected{
+  .selected {
     background: #007acc;
   }
 
-  #siteName{
-    position:absolute;
-    top:5px;
-    right:10px;
-    font-size:1.1em;
+  #siteName {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 1.1em;
     font-weight: 700;
   }
 

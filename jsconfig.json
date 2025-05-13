@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-      "experimentalDecorators": true
+    "target": "es2022",
+    "module": "commonjs",
+    "allowSyntheticDefaultImports": true
   },
-  "include": [
-    "client/**/*",
-    "server/**/*",
-    "src/**/*",
-    "src_docs/**/*",
-    "test/**/*",
-    "tools/**/*"
+  "exclude": [
+    "node_modules",
+    "bower_components",
+    "jspm_packages",
+    "tmp",
+    "temp"
   ]
 }

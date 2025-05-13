@@ -1,16 +1,16 @@
 /*
 Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
-License: CC BY-NC-ND 4.0
+License: MIT
 */
 
-import HorizontalProgress from 'Components/general/loaders/horizontal/progress/component'
-import Music from 'Components/general/music/component';
+import HorizontalProgress from '/src/components/general/loaders/horizontal/progress/component'
+import Music from '/src/components/general/music/component'
 import React, { useRef } from 'react'
 import { Link } from 'react-router-dom'
 
-import "./styles.scss";
+import "./styles.scss"
 
-const Aside = ( props ) => {
+const Aside = (props) => {
 
   return (
     <>
@@ -20,10 +20,10 @@ const Aside = ( props ) => {
           <li>
 
             <Link
-                to={'/vote/'}
-                title={ 'Cast your vote!' }
-              >
-                Vote your Beer!
+              to={'/vote/'}
+              title={'Cast your vote!'}
+            >
+              Vote your Beer!
             </Link>
 
           </li>

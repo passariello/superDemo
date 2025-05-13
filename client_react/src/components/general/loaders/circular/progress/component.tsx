@@ -1,27 +1,27 @@
 /*
 Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
-License: CC BY-NC-ND 4.0
+License: MIT
 */
 
 import React, { useEffect, useState } from "react"
-import styles from "./style.less"
+import './styles.scss'
 
-const CircularProgress = ( props: any ) => {
+const CircularProgress = (props: any) => {
 
   //return null
 
   return (
     <div
-      className={styles.backGroundFullScreen}
+      className="backGroundFullScreen"
       style={{ position: props?.options?.position }}
     >
       <div
-        className={styles.loading_container}
+        className="loading_container"
         style={{ position: props?.options?.position }}
       >
 
         <div
-          className={ styles.rotor }
+          className="rotor"
           style={{
             borderWidth: props?.options?.thickness,
             animationDuration: props?.options?.speed,
@@ -30,18 +30,18 @@ const CircularProgress = ( props: any ) => {
           }}
         />
 
-        { props?.options?.counter &&
-          <div className={styles.loading_container}>
+        {props?.options?.counter &&
+          <div className="loading_container">
             <span>
               {/* { `${Math.round( props?.options?.value )}` } */}
-              { props?.options?.value }
+              {props?.options?.value}
             </span>
           </div>
         }
 
       </div>
     </div>
-  );
+  )
 }
 
 export default CircularProgress

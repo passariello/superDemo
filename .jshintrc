@@ -1,13 +1,16 @@
 {
-  "esversion": 11,
+  "esversion": 2022,
+  "sub": true,
   "asi": false,
   "esnext": false,
   "moz": true,
+  "browser": true,
   "boss": true,
   "node": true,
   "validthis": true,
   "globals": {
     "EventEmitter": true,
-    "Promise": true
+    "Promise": true,
+    "document": true
   }
 }

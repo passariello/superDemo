@@ -1,6 +1,6 @@
 /*
 Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
-License: CC BY-NC-ND 4.0
+License: MIT
 */
 
 import React from 'react'
@@ -9,10 +9,10 @@ function NotFound() {
 
 
   return (
-      <div>
-      NotFound<br/>
-      </div>
-  );
+    <div>
+      NotFound<br />
+    </div>
+  )
 
 }
 

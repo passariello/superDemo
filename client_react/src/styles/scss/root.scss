@@ -1,40 +1,40 @@
 /*
 Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
-License: CC BY-NC-ND 4.0
+License: MIT
 */
 
 :root {
 
-  --_SuperDemo-gap-margin: 20px 20px 20px 50px;
+  --superDemo-gap-margin: 20px 20px 20px 50px;
 
   /* BODY */
-  --_SuperDemo-body-background-color: rgba(0, 81, 255, 0.1);
-  --_SuperDemo-body-color: rgba( 255,255,255,.8 );
+  --superDemo-body-background-color: rgba(0, 81, 255, 0.1);
+  --superDemo-body-color: rgba(255, 255, 255, .8);
 
   /* HEADER */
-  --_SuperDemo-header-height: 70px;
+  --superDemo-header-height: 70px;
 
   /* NAV */
-  --_SuperDemo-nav-background: #2159d37e;
-  --_SuperDemo-nav-height: 40px;
+  --superDemo-nav-background: #2159d37e;
+  --superDemo-nav-height: 40px;
 
   /* ASIDE */
-  --_SuperDemo-aside-width: 160px;
+  --superDemo-aside-width: 160px;
 
   /* MAIN */
-  --_SuperDemo-main-background-color: rgba(197, 197, 197, 0.1);
-  --_SuperDemo-main-max-width: 1240px;
+  --superDemo-main-background-color: rgba(197, 197, 197, 0.1);
+  --superDemo-main-max-width: 1240px;
 
   /* FOOTER */
-  --_SuperDemo-footer-background: #2159d37e;
-  --_SuperDemo-footer-height: 40px;
+  --superDemo-footer-background: #2159d37e;
+  --superDemo-footer-height: 40px;
 
   /* SCROLLBAR */
-  --_SuperDemo-scrollbar-width:10px;
-  --_SuperDemo-scrollbar-height:10px;
-  --_SuperDemo-scrollbar-color:#2159d37e;
+  --superDemo-scrollbar-width: 10px;
+  --superDemo-scrollbar-height: 10px;
+  --superDemo-scrollbar-color: #2159d37e;
 
   /* INPUT / BUTTONS */
-  --_SuperDemo-inputs-borderRadius:5px;
+  --superDemo-inputs-borderRadius: 5px;
 
 }

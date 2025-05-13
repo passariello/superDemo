@@ -1,46 +1,46 @@
 /*
 Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
-License: CC BY-NC-ND 4.0
+License: MIT
 */
 
-footer{
+footer {
 
-  position:absolute;
-  left:0;
-  right:10px;
-  bottom:0;
-  height:var( --_SuperDemo-footer-height );
+  position: absolute;
+  left: 0;
+  right: 10px;
+  bottom: 0;
+  height: var(--superDemo-footer-height);
   border-width: 1px 0 0 0;
   font-size: .75em;
-  background: var( --_SuperDemo-footer-background );
-  overflow:hidden;
-  border-radius:0 25px 0 0;
+  background: var(--superDemo-footer-background);
+  overflow: hidden;
+  border-radius: 0 25px 0 0;
 
-  &:before{
-    content:"";
-    width:200%;
-    height:500px;
-    background:rgba(0, 81, 255, .5);
-    position:absolute;
-    bottom:-0px;
-    left:-50%;
-    z-index:0;
-    transform:rotate(5deg);
+  &:before {
+    content: "";
+    width: 200%;
+    height: 500px;
+    background: rgba(0, 81, 255, .5);
+    position: absolute;
+    bottom: -0px;
+    left: -50%;
+    z-index: 0;
+    transform: rotate(5deg);
   }
 
-  div:nth-child(1){
-    position:absolute;
-    top:8px;
-    left:220px;
+  div:nth-child(1) {
+    position: absolute;
+    top: 8px;
+    left: 220px;
     text-align: left;
-    padding:5px 0 0 10px;
+    padding: 5px 0 0 10px;
   }
 
-  div:nth-child(2){
-    position:absolute;
-    top:8px;
-    right:20px;
+  div:nth-child(2) {
+    position: absolute;
+    top: 8px;
+    right: 20px;
     text-align: right;
-    padding:5px 10px 0 0;
+    padding: 5px 10px 0 0;
   }
 }

@@ -1,35 +1,37 @@
 {
   "folders": [
-    { "path": "./" }
+    {
+      "path": "./"
+    }
   ],
   "settings": {
-
-  "editor.hover.enabled": true,
-  "editor.hover.delay": 2000,
-  "editor.quickSuggestions": true,
-  "editor.quickSuggestionsDelay": 2000,
-
-  "editor.tabCompletion": "off",
-  "editor.renderWhitespace": "all",
-  "editor.acceptSuggestionOnEnter": "on",
-  "editor.defaultFormatter": null,
-  "editor.formatOnSave": false,
-  "editor.autoClosingBrackets": "always",
-  "editor.autoClosingOvertype": "always",
-  "editor.tabSize": 2,
-  "editor.codeActionsOnSave": { "source.organizeImports": false },
-
-  "files.trimTrailingWhitespace": true,
-  "typescript.format.semicolons": "remove",
-  "javascript.format.semicolons" : "remove",
-
+    "editor.hover.enabled": true,
+    "editor.hover.delay": 2000,
+    "editor.quickSuggestions": {
+      "other": "on",
+      "comments": "off",
+      "strings": "off"
+    },
+    "editor.quickSuggestionsDelay": 2000,
+    "editor.tabCompletion": "off",
+    "editor.renderWhitespace": "all",
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.defaultFormatter": null,
+    "editor.formatOnSave": false,
+    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingOvertype": "always",
+    "editor.tabSize": 2,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "never"
+    },
+    "files.trimTrailingWhitespace": true,
+    "typescript.format.semicolons": "remove",
+    "javascript.format.semicolons": "remove",
     "[typescript]": {},
     "[markdown]": {},
     "[php]": {},
     "[css]": {},
-    "[less]": {},
     "[js]": {},
-
     "files.exclude": {
       "**/.DS_Store": true,
       "**/node_modules": true,
@@ -50,7 +52,6 @@
       "babel.config.js": true,
       "jest.config.js": true
     },
-
     "search.exclude": {
       ".editorconfig": true,
       "**/.cache": true,
@@ -67,7 +68,5 @@
       "node_modules": true,
       "package-lock.json": true
     }
-
   }
-
 }

@@ -1,31 +1,31 @@
 /*
 Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
-License: CC BY-NC-ND 4.0
+License: MIT
 */
 
 import React from 'react'
 
-import styles from './styles.less'
+import './styles.scss'
 
 // declare allow option for react
 declare module 'react' {
   interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
     // extends React's HTMLAttributes
-    allow?: string;
+    allow?: string
   }
 }
 
 
-const Music = ( channel: string ) => {
+const Music = (channel: string) => {
 
   return (
-    <div className={ styles.music }>
+    <div className="music">
       <audio
         id="volume-control"
-        src={ channel ? channel : "https://streamssl.chilltrax.com" }
+        src={channel ? channel : "https://streamssl.chilltrax.com"}
         // show and auto activate by opt in config file
-        controls autoPlay = { _SuperDemo.music ? true : false }
-        allow = {_SuperDemo.music}
+        controls autoPlay={superDemo.music ? true : false}
+        allow={superDemo.music}
       />
     </div>
   )
