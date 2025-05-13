@@ -28,7 +28,7 @@ services:
     ports:
       - "9000:9000"
     working_dir: /api
-    command: node ./bin/www
+    command: node ./bin/start.js
     volumes:
       - ./api:/api
       - /api/node_modules

@@ -185,7 +185,7 @@ rights may limit how you use the material.
 │   │   ├───styles
 │   │   │   ├───responsive
 │   │   │   └───scss
-│   │   └───typings
+│   │   └───types
 │   └───tests
 ├───mongo
 └───screenShot
