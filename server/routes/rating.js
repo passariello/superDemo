@@ -35,7 +35,7 @@ router.post(
         if (data === null) {
 
           const
-            insertModel = require('./rating_insert'),
+            insertModel = require('./rating_insert.js'),
             inputData = req.body
 
           insertModel.createData(

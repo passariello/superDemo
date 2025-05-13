@@ -1,6 +1,5 @@
 FROM node:latest
-WORKDIR /api
-COPY ./ /api/
+WORKDIR /server
+COPY ./ /server/
 RUN npm install
 EXPOSE 9000
-

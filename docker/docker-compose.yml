@@ -23,15 +23,15 @@ services:
     restart: always
     container_name: dpSuperDemo.api
     build:
-      context: ./api
+      context: ./server
       dockerfile: Dockerfile
     ports:
       - "9000:9000"
-    working_dir: /api
+    working_dir: /server
     command: node ./bin/start.js
     volumes:
-      - ./api:/api
-      - /api/node_modules
+      - ./server:/api
+      - /server/node_modules
     entrypoint: ["npm", "start"]
     depends_on:
       - mongodb
@@ -60,28 +60,6 @@ services:
       - api
     networks:
       - vnet
-
-  client_vue:
-    image: node
-    restart: always
-    container_name: dpSuperDemo.client.vue
-    build:
-      context: ./client_vue
-      dockerfile: Dockerfile
-      args:
-        API_URL: http://localhost:9000
-    ports:
-      - "3001:3001"
-    working_dir: /client_vue
-    command: "node ./server/start.js"
-    volumes:
-      - ./client_vue:/client_vue
-      - /client_vue/node_modules
-    links:
-      - api
-    networks:
-      - vnet
-
 networks:
   vnet:
     driver: bridge
