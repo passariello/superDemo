@@ -41,21 +41,21 @@ services:
     networks:
       - vnet
 
-  client_react:
+  client:
     image: node
     restart: always
     container_name: dpSuperDemo.client.react
     build:
-      context: ./client_react
+      context: ./client
       args:
         API_URL: http://localhost:9000
     ports:
       - "3000:3000"
-    working_dir: /client_react/server
+    working_dir: /client/server
     command: node start.js
     volumes:
-      - ./client_react:/client_react
-      - /client_react/node_modules
+      - ./client:/client
+      - /client/node_modules
     links:
       - api
     networks:
