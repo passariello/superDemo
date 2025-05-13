@@ -208,7 +208,4 @@ rights may limit how you use the material.
 
 ---------------------------------------
 Dario Passariello
-Web Application Developer
-Trainer and 3D Expert
-<https://dario.passariello.ca>
-mobile: +1 778 318 2645
+<dariopassariello@gmail.com>
