@@ -92,12 +92,5 @@
     "#OLD": true,
     "coverage": true,
     "**/**/cmd.exe.lnk": true
-  },
-  "jest.runMode": "watch",
-  "jest.coverageFormatter": "DefaultFormatter", //"GutterFormatter"
-  "jest.coverageColors": {
-    "uncovered": "rgba(35,35,35, 0.5)",
-    "partially-covered": "rgba(255,215,0, 0.04)",
-  },
-  "jest.debugMode": false
+  }
 }
