@@ -1,10 +1,18 @@
-FROM node::22-alpine
+FROM node:22-alpine
 ARG API_URL
 
-WORKDIR /tmp
+WORKDIR /client
+COPY ./ /client/
+RUN npm install --force && \
+  npm run build
 
+WORKDIR /client/server
+COPY ./ /client/server
+RUN npm install --prod
+
+WORKDIR /tmp
+# COPY ./client ./
 ENV API_URL "$API_URL"
-COPY ./client ./
 RUN npm install
 RUN npm run build
 
@@ -16,5 +24,5 @@ RUN cp /tmp/package.json . && \
   rm -rf /tmp && \
   npm install --prod
 
-EXPOSE 3002
+EXPOSE 3000
 CMD ["npm", "run", "serve-prod"]

@@ -33,9 +33,8 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-  // "javascript.format.semicolons": "remove",
+  "javascript.format.semicolons": "remove",
   "javascript.suggestionActions.enabled": false,
-  "typescript.format.semicolons": "remove",
   "typescript.referencesCodeLens.enabled": true,
   "typescript.suggestionActions.enabled": false,
   "explorer.compactFolders": false,
@@ -60,7 +59,7 @@
     "editor.insertSpaces": true
   },
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "GitHub.copilot",
     "editor.foldingStrategy": "indentation"
   },
   "search.exclude": {

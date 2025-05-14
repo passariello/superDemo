@@ -5,20 +5,6 @@ version: "3.1"
 
 services:
 
-  mongodb:
-    restart: always
-    container_name: superDemo.mongodb
-    build:
-      context: ./mongo
-      dockerfile: Dockerfile
-    volumes:
-      - ./mongo/data-node:/data/db
-    ports:
-      - 27017:27017
-    command: mongod --noauth
-    networks:
-      - vnet
-
   api:
     restart: always
     container_name: superDemo.api
@@ -31,13 +17,9 @@ services:
     command: node ./bin/start.js
     volumes:
       - ./server:/api
+      - ./server/data-node:/db
       - /server/node_modules
     entrypoint: ["npm", "start"]
-    depends_on:
-      - mongodb
-    environment:
-      - MONGODB_HOST=mongodb
-      - MONGODB_PORT=27017
     networks:
       - vnet
 

@@ -9,7 +9,13 @@ function Help() {
 
   return (
     <div>
-      <img src="/assets/images/cmon.png" style={{ transform: 'rotate(16deg)' }} />
+      <img src="/assets/images/cmon.png" style={
+        {
+          marginTop: "10px",
+          marginLeft: "-51px",
+          transform: 'rotate(16deg)'
+        }
+      } />
     </div>
 
   )
