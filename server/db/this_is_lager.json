@@ -1,0 +1,90 @@
+{
+  "id": 163,
+  "name": "This. Is. Lager",
+  "tagline": "21st Century Pilsner. Sharp. Robust. Honest.",
+  "first_brewed": "08/2014",
+  "description": "Brewed with 100% malt, ten times the hops of most industrial lagers and cold-conditioned for five weeks, this spicy, robust Pilsner is lager reborn. Expect a robust, full-bodied malt character on the front of the tongue, spicy citrus notes as it goes back through the palate and an assertive bitter finish with a lemon and pepper character to round things off.",
+  "image_url": "https://images.punkapi.com/v2/163.png",
+  "abv": 4.7,
+  "ibu": 37,
+  "target_fg": 1007,
+  "target_og": 1043,
+  "ebc": 10,
+  "srm": 6,
+  "ph": 4.2,
+  "attenuation_level": 83.7,
+  "volume": {
+    "value": 20,
+    "unit": "litres"
+  },
+  "boil_volume": {
+    "value": 25,
+    "unit": "litres"
+  },
+  "method": {
+    "mash_temp": [
+      {
+        "temp": {
+          "value": 65,
+          "unit": "celsius"
+        },
+        "duration": 75
+      }
+    ],
+    "fermentation": {
+      "temp": {
+        "value": 12,
+        "unit": "celsius"
+      }
+    },
+    "twist": null
+  },
+  "ingredients": {
+    "malt": [
+      {
+        "name": "Pilsner",
+        "amount": {
+          "value": 3.81,
+          "unit": "kilograms"
+        }
+      }
+    ],
+    "hops": [
+      {
+        "name": "Columbus",
+        "amount": {
+          "value": 5,
+          "unit": "grams"
+        },
+        "add": "start",
+        "attribute": "bitter"
+      },
+      {
+        "name": "Hersbrucker",
+        "amount": {
+          "value": 12.5,
+          "unit": "grams"
+        },
+        "add": "start",
+        "attribute": "bitter"
+      },
+      {
+        "name": "Saaz",
+        "amount": {
+          "value": 12.5,
+          "unit": "grams"
+        },
+        "add": "end",
+        "attribute": "flavour"
+      }
+    ],
+    "yeast": "Wyeast 2007 - Pilsen Lager™"
+  },
+  "food_pairing": [
+    "Mexican ceviche",
+    "Blue cheese crumbled over wedges",
+    "Gooey lemon bar"
+  ],
+  "brewers_tips": "The most important thing about making a lager? Fermentation temperature! Do everything you can to control the ambient temperature to 9 - 12°C. In the old days, they used to brew lager over winter, so the colder temperature gave a much preferable fermentation profile. Ferment too hot and you beer will taste like yeasty bread.",
+  "contributed_by": "Sam Mason <samjbmason>"
+}

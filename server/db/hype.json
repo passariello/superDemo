@@ -1,0 +1,90 @@
+{
+  "id": 68,
+  "name": "Hype",
+  "tagline": "New Zealand Pale Ale.",
+  "first_brewed": "08/2007",
+  "description": "A perfect pale ale showcase for the tropical profile of New Zealand hops and the intense citrus of US hops.",
+  "image_url": "https://images.punkapi.com/v2/keg.png",
+  "abv": 4.1,
+  "ibu": 65,
+  "target_fg": 1010,
+  "target_og": 1042,
+  "ebc": 17,
+  "srm": 8.5,
+  "ph": 4.4,
+  "attenuation_level": 76.2,
+  "volume": {
+    "value": 20,
+    "unit": "litres"
+  },
+  "boil_volume": {
+    "value": 25,
+    "unit": "litres"
+  },
+  "method": {
+    "mash_temp": [
+      {
+        "temp": {
+          "value": 65,
+          "unit": "celsius"
+        },
+        "duration": 75
+      }
+    ],
+    "fermentation": {
+      "temp": {
+        "value": 19,
+        "unit": "celsius"
+      }
+    },
+    "twist": null
+  },
+  "ingredients": {
+    "malt": [
+      {
+        "name": "Maris Otter Extra Pale",
+        "amount": {
+          "value": 4.02,
+          "unit": "kilograms"
+        }
+      }
+    ],
+    "hops": [
+      {
+        "name": "Nelson Sauvin",
+        "amount": {
+          "value": 2,
+          "unit": "grams"
+        },
+        "add": "start",
+        "attribute": "bitter"
+      },
+      {
+        "name": "Nelson Sauvin",
+        "amount": {
+          "value": 5,
+          "unit": "grams"
+        },
+        "add": "end",
+        "attribute": "flavour"
+      },
+      {
+        "name": "Amarillo",
+        "amount": {
+          "value": 2.5,
+          "unit": "grams"
+        },
+        "add": "end",
+        "attribute": "flavour"
+      }
+    ],
+    "yeast": "Wyeast 1272 - American Ale II™"
+  },
+  "food_pairing": [
+    "Quince cheese",
+    "Shredded chicken and mango salsa taquitos",
+    "Poached pear"
+  ],
+  "brewers_tips": "After the beer has fermented, leave it to rest for 2 – 3 days at the lowest temperature possible (ideally 0 – 2'C). This will allow the flavours to marry together, and will transform it into a balanced and amazing beer.",
+  "contributed_by": "Sam Mason <samjbmason>"
+}
