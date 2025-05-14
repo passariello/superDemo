@@ -10,6 +10,10 @@
       "dom",
       "dom.iterable"
     ],
+    "types": [
+      "node"
+    ],
+    "moduleDetection": "force",
     "importHelpers": true,
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
