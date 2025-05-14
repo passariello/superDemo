@@ -26,43 +26,43 @@ const CastVote = (props) => {
       })
     }
 
-    fetch(superDemo.api + superDemo.conf.app.proxy.api + 'rating/', requestOptions)
-      .then(response => response.json())
-      .then(response => {
+    // fetch(superDemo.api + superDemo.conf.app.proxy.api + 'rating/', requestOptions)
+    //   .then(response => response.json())
+    //   .then(response => {
 
-        // RESPONSE ABOUT VOTE
-        //console.log(response)
+    //     // RESPONSE ABOUT VOTE
+    //     //console.log(response)
 
-        if (response.record === 'exist') alert('sorry, you already voted!')
+    //     if (response.record === 'exist') alert('sorry, you already voted!')
 
-        if (response.record === 'inserted') {
-          getRating(props.id)
-          alert('Many thanks, we received your vote!')
-        }
+    //     if (response.record === 'inserted') {
+    //       getRating(props.id)
+    //       alert('Many thanks, we received your vote!')
+    //     }
 
-      })
-      .catch((error) => {
-        console.log(error)
-      })
+    //   })
+    //   .catch((error) => {
+    //     console.log(error)
+    //   })
 
   }
 
   /*********************************************************************/
 
-  const getRating = (id) => {
-    fetch(superDemo.api + superDemo.conf.app.proxy.api + 'count/?id=' + id)
-      .then(res => res.json())
-      .then(res => {
-        setRate(Number(res[0].rating / res[0].count) || 0)
-        //console.log( Number( res[0].rating / res[0].count ) || 0 )
-      })
-      .catch(err => err)
+  // const getRating = (id) => {
+  //   fetch(superDemo.api + superDemo.conf.app.proxy.api + 'count/?id=' + id)
+  //     .then(res => res.json())
+  //     .then(res => {
+  //       setRate(Number(res[0].rating / res[0].count) || 0)
+  //       //console.log( Number( res[0].rating / res[0].count ) || 0 )
+  //     })
+  //     .catch(err => err)
 
-  }
+  // }
 
-  useEffect(() => {
-    getRating(props.id)
-  })
+  // useEffect(() => {
+  //   getRating(props.id)
+  // })
 
   // setTimeout(()=>{}, 2000 )
 

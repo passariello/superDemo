@@ -1,2 +1,0 @@
-{"name":"Admin","email":"admin@example.com","password":"demo", "permissions":[{"_userGroupId":{"$oid":"000000000000000000000000"}}]}
-{"name":"JohnDoe","email":"johndoe@example.lan","password":"demo", "permissions":[{"_userGroupId":{"$oid":"000000000000000000000001"}}]}

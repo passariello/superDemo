@@ -1,3 +1,0 @@
-{"_id":{"$oid":"000000000000000000000000"},"name":"Administrator","permissions":["canAddValuation","canDeleteValuation"]}
-{"_id":{"$oid":"000000000000000000000001"},"name":"public","permissions":["canAddValuation"]}
-{"_id":{"$oid":"000000000000000000000002"},"name":"BannedUser","permissions":[]}

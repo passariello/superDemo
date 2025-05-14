@@ -18,59 +18,27 @@ function Vote() {
   // use id to che one beer by id
   // the API refer directly to beers
 
-  // FIRST SETUP
-  let totalBeers = 325, // from original creator https://github.com/sammdec/punkapi
-    page = dphelper.path.query('page') || 1,
-    per_page = dphelper.path.query('per_pages') || 40,
-    pages = dphelper.path.query('id') ? 1 : Math.ceil(totalBeers / Number(per_page))
+  // // FIRST SETUP
+  // let totalBeers = 325, // from original creator https://github.com/sammdec/punkapi
+  //   page = dphelper.path.query('page') || 1,
+  //   per_page = dphelper.path.query('per_pages') || 40,
+  //   pages = dphelper.path.query('id') ? 1 : Math.ceil(totalBeers / Number(per_page))
 
   // pages = dphelper.path.query('name') ? 1 : Math.ceil(totalBeers / Number(per_page))
 
-  // Get data from API
-  const punkAPI = () => {
-
-    // build request in base of query -> setup vars
-    let parse = window.location.href,
-      name = "",
-      id = "",
-      other = ""
-
-    // check vars
-    if (parse['id']) id = '?id=' + parse['id']
-    if (parse['name']) name = '?beer_name=' + parse['name']
-    // if (!parse['empty'] && !parse['id'] && !parse['name']) other = '?' + parse.join('&')
-    if (parse !== 'empty' && !parse['id'] && !parse['name']) other = `?page=${page}&per_page=${per_page}`
-
-    //console.log( id, name, other )
-
-    /*************************************************************************************** */
-    // FETCH API
-
-    // GET CACHED DATA
-    if (store.get("apiCache_" + id + name + other)) {
-
-      setBeersList(JSON.parse(store.get("apiCache_" + id + name + other)))
-
-    } else {
-
-      fetch(superDemo.api + superDemo.conf.app.api + 'get' + id + name + other)
-        .then(res => res.json())
-        .then(res => {
-          setBeersList([...res])
-          store.set("apiCache_" + id + name + other, res)
-        })
-        .catch(err => err)
-
+  const getData = async () => {
+    try {
+      const resp = await fetch('https://api.sampleapis.com/beers/ale');
+      const json = await resp.json();
+      console.log(json)
+      setBeersList(json);
+    } catch (err) {
+      // setBeersList(err.message);
     }
-
-    setTimeout(() => {
-      const scroll = document.querySelector(".beer")
-      if (scroll) scroll.scrollTop = 0
-    }, 1000)
   }
 
   useEffect(() => {
-    punkAPI()
+    getData()
   }, [location])
 
   /*************************************************************************************** */
@@ -82,7 +50,7 @@ function Vote() {
 
     // send in the result
     window.history.pushState('', '', val ? "/vote/?name=" + val : "/vote/")
-    punkAPI()
+    getData()
   }
 
   /*************************************************************************************** */
@@ -93,19 +61,18 @@ function Vote() {
       <li key={props.id}>
 
         <div className="beerThumb">
-          <img src={props.image_url} width={'40px'} />
+          {props.image && <img src={props.image} width='80' />}
         </div>
 
         <div className="beerInfo">
           <div>{props.name} <CastVote id={props.id} /> </div>
-          <div><b>{props.tagline}</b></div>
-          <div>{props.description}</div>
           <div>First brewed: {props.first_brewed}</div>
           <hr />
           <div>
-            Perfect pairing:
+            Price:
             <br />
-            <i>{props?.food_pairing?.map((pair) => pair + ", ")}</i>
+            {/* <i>{props?.food_pairing?.map((pair) => pair + ", ")}</i> */}
+            <i>{props?.price}</i>
           </div>
         </div>
 
@@ -115,7 +82,7 @@ function Vote() {
   }
 
   useEffect(() => {
-    punkAPI()
+    getData()
   }, [])
 
   return (
@@ -142,7 +109,7 @@ function Vote() {
                 <input type="submit" value="find" />
               </form>
 
-              <div>
+              {/* <div>
                 Page: {page} of {pages} - results: {beersList?.length}
                 <ul>
                   {[...Array(pages)].map((e, i) => (
@@ -157,7 +124,7 @@ function Vote() {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </div> */}
 
             </div>
 

@@ -6,7 +6,6 @@
 
 # dependencies
 *node_module*
-/mongo/data-node/*
 
 # DB nodes
 */data-node/*

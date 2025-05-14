@@ -6,7 +6,6 @@ copyright (c) 2022 by dario Passariello
 ![Node-js](https://img.shields.io/badge/Node-js-006b98?logo=Node-js&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-006b98?logo=Express&logoColor=white)
 ![React-js](https://img.shields.io/badge/React-js-006b98?logo=React-js&logoColor=white)
-![Mongodb](https://img.shields.io/badge/Mongodb-006b98?logo=Mongodb&logoColor=white)
 ![Api](https://img.shields.io/badge/Api-006b98?logo=Api&logoColor=white)
 ![dpHelper](https://img.shields.io/badge/dpHelper-npm-green?logo=dpHelper&logoColor=white)
 ![stModal](https://img.shields.io/badge/stModal-npm-green?logo=stModal&logoColor=white)
@@ -19,9 +18,8 @@ Hi, this is Dario!.
 This is the demo about beer labels. Everything there is invented just to show how I build everything and I came to share all the information.
 I use these technologies:
 
-1) Docker for Mongodb as a machine on port 27017.
-2) Docker api server on node machine port 9000.
-3) Docker Client React on node machine on port 3000
+1) Docker api server on node machine port 9000.
+2) Docker Client React on node machine on port 3000
 
 ## Live Demo link
 
@@ -61,16 +59,11 @@ I want to make it automatic during Docker installation ... it's a TODO
 From Docker you can run superDemo.client on the browser and enjoy my fatigue.
 Inside /client/data you have config options.
 
-## manage db
-
-Please, download and install MongoDB Compass from <https://www.mongodb.com/products/compass>.
-
 ## what's in this version
 
 1) Docker setup in all parts
 2) React version with webpack installed
-3) Mongodb server works
-4) API punkapi full support
+3) API punkapi full support
 
 ## about project
 
@@ -187,7 +180,6 @@ rights may limit how you use the material.
 │   │   │   └───scss
 │   │   └───types
 │   └───tests
-├───mongo
 └───screenShot
 
 ``
