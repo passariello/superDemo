@@ -12,34 +12,49 @@ import "./styles.scss"
 
 function Vote() {
 
-  const [beersList, setBeersList] = useState(null)
-  const location = useLocation()
+  const
+    [beersList, setBeersList] = useState([]),
+    [pageSetup, setPageSetup] = useState({}),
+    location = useLocation()
 
-  // use id to che one beer by id
-  // the API refer directly to beers
-
-  // // FIRST SETUP
-  // let totalBeers = 325, // from original creator https://github.com/sammdec/punkapi
-  //   page = dphelper.path.query('page') || 1,
-  //   per_page = dphelper.path.query('per_pages') || 40,
-  //   pages = dphelper.path.query('id') ? 1 : Math.ceil(totalBeers / Number(per_page))
-
-  // pages = dphelper.path.query('name') ? 1 : Math.ceil(totalBeers / Number(per_page))
+  const pagination = () => {
+    setPageSetup(
+      {
+        page: Number(dphelper.path.query('page')) || 1,
+        per_page: Number(dphelper.path.query('per_pages')) || 40,
+        pages: Math.ceil(beersList?.[1] / Number(dphelper.path.query('per_pages')) || 9),
+        tot: beersList?.[1] || 325
+      }
+    )
+  }
 
   const getData = async () => {
+
     try {
-      const resp = await fetch('https://api.sampleapis.com/beers/ale');
-      const json = await resp.json();
-      console.log(json)
-      setBeersList(json);
+
+      const
+        resp = await fetch(`/api?page=${dphelper.path.query('page') || 1}&per_pages=${dphelper.path.query('per_page') || 40}`),
+        json = await resp.json()
+
+      setBeersList(json)
+      pagination()
+
     } catch (err) {
       // setBeersList(err.message);
     }
   }
 
-  useEffect(() => {
-    getData()
-  }, [location])
+  useEffect(
+    () => {
+      getData()
+    }, [location]
+  )
+
+  useEffect(
+    () => {
+      getData()
+    }, []
+  )
 
   /*************************************************************************************** */
   // SEARCH
@@ -69,10 +84,9 @@ function Vote() {
           <div>First brewed: {props.first_brewed}</div>
           <hr />
           <div>
-            Price:
+            Volume: {props?.boil_volume.value} {props?.boil_volume.unit}
             <br />
-            {/* <i>{props?.food_pairing?.map((pair) => pair + ", ")}</i> */}
-            <i>{props?.price}</i>
+            <i>{props?.food_pairing?.map((pair) => pair + ", ")}</i>
           </div>
         </div>
 
@@ -80,10 +94,6 @@ function Vote() {
 
     )
   }
-
-  useEffect(() => {
-    getData()
-  }, [])
 
   return (
     <>
@@ -109,28 +119,34 @@ function Vote() {
                 <input type="submit" value="find" />
               </form>
 
-              {/* <div>
-                Page: {page} of {pages} - results: {beersList?.length}
+              <div>
+                Page: {pageSetup['page']} of {pageSetup['pages']} / {pageSetup['per_page']} per page, total: {pageSetup['tot']}
                 <ul>
-                  {[...Array(pages)].map((e, i) => (
-                    <li key={i}>
-                      <Link
-                        to={'?page=' + Number(i + 1) + '&per_pages=' + per_page}
-                        title={'Page' + Number(i + 1)}
-                        className={Number(i + 1) === Number(page) ? "selected" : ""}
-                      >
-                        {i + 1}
-                      </Link>
-                    </li>
-                  ))}
+                  {
+                    [...Array(pageSetup['pages'])].map(
+                      (e, i) => (
+                        <li key={i}>
+                          <Link
+                            to={'?page=' + Number(i + 1) + '&per_pages=' + pageSetup['per_page']}
+                            title={'Page' + Number(i + 1)}
+                            className={Number(i + 1) === pageSetup['page'] ? "selected" : ""}
+                          >
+                            {i + 1}
+                          </Link>
+                        </li>
+                      )
+                    )
+                  }
                 </ul>
-              </div> */}
+              </div>
 
             </div>
 
             <div className="beer" >
               <ul>
-                {beersList?.map((val) => listBeers(val))}
+                {
+                  beersList?.[0]?.map((val) => listBeers(val))
+                }
               </ul>
             </div>
 
