@@ -4,29 +4,49 @@ License: MIT
 */
 
 const
-  pjson = require('../package.json'),
+  pjson = require('./package.json'),
   express = require('express'),
   path = require('path'),
   app = express(),
-  port = pjson.app.port,
+  port = pjson.port,
+  { createProxyMiddleware } = require('http-proxy-middleware'),
 
   // grab dyna uri
   url = __dirname.replace('server', '')
 
-// now load all pages dynamically!
-app.use(express.static(url + '/dist/'))
-app.get(  /(.*)/,  (req, res) => res.sendFile(path.resolve(url, 'dist', 'index.html')))
+  app.use(
+    '/api',
+    createProxyMiddleware(
+      {
+        target: 'http://host.docker.internal:9000/api',
+        changeOrigin: false,
+        pathRewrite: {
+          "^/api": "/api",
+        }
+      }
+    )
+  )
 
-// start the microscopic server!
-console.info(`
-  This server is used by Docker!,
-  Please use "client" folder and run dev or build.
-  If you want to use this server... you need to build the client first!.
+  app.use(express.static(url + '/dist/'))
 
-  If you want to use the build in NginX or Apache you donn't need this server!
-  If you need assistance constact Dario!
-`)
+  app.get(
+    /(.*)/,
+    (req, res) => {
+      console.log("test")
+      res.sendFile(path.resolve(url, 'dist', 'index.html'))
+    }
+  )
 
-console.info(`  SuperDemo Web Server Started on port: `, port)
+  // start the microscopic server!
+  console.info(`
+    This server is used by Docker!,
+    Please use "client" folder and run dev or build.
+    If you want to use this server... you need to build the client first!.
 
-app.listen(port);
+    If you want to use the build in NginX or Apache you donn't need this server!
+    If you need assistance constact Dario!
+  `)
+
+  console.info(`  SuperDemo Web Server Started on port: `, port)
+
+  app.listen(port);
