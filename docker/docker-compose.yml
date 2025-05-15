@@ -1,45 +1,37 @@
-# Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
+# Copyright: © 2025 Dario Passariello <dariopassariello@gmail.com>
 # License: MIT
-
-version: "3.1"
 
 services:
 
-  api:
+  backend:
     restart: always
-    container_name: superDemo.api
+    container_name: superDemo.backend
     build:
-      context: ./server
-      dockerfile: Dockerfile
+      dockerfile: "../docker/dockerfile.backend"
+      context: ../server
     ports:
       - "9000:9000"
-    working_dir: /server
-    command: node ./bin/start.js
-    volumes:
-      - ./server:/api
-      - ./server/data-node:/db
-      - /server/node_modules
+    # volumes:
+    #   - ./server:/backend
     entrypoint: ["npm", "start"]
     networks:
       - vnet
 
-  client:
-    image: node
+  frontend:
     restart: always
-    container_name: superDemo.client
+    container_name: superDemo.frontend
     build:
-      context: ./client
-      args:
-        API_URL: http://localhost:9000
+      dockerfile: "../docker/dockerfile.frontend"
+      context: ../client
+      # args:
+      #   API_URL: http://localhost:9000
     ports:
       - "3000:3000"
-    working_dir: /client/server
-    command: node start.js
-    volumes:
-      - ./client:/client
-      - /client/node_modules
+    # volumes:
+    #   - ./client:/frontend
+    entrypoint: ["npm", "start"]
     links:
-      - api
+      - backend
     networks:
       - vnet
 networks:
