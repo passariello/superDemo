@@ -1,0 +1,31 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: superDemo
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Dario
+    family-names: Passariello
+    email: dariopassariello@gmail.com
+    name-particle: Dario
+identifiers:
+  - type: url
+    value: "https://superdemo.picla.net"
+    description: Just a full stack example
+repository-code: "https://github.com/passariello/superDemo"
+url: "https://superDemo.picla.net/"
+abstract: "superDemo, Just a full stack project."
+keywords:
+  - "super "
+  - "demo "
+  - "passariello "
+  - "dario "
+  - "fullstack "
+  - "server "
+  - "example "
+  - dphelper
+license: MIT
