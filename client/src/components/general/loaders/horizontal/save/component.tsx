@@ -3,7 +3,6 @@ Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
 License: MIT
 */
 
-import React from "react"
 import './styles.scss'
 
 export const HorizontalSave = (props: any) => {
@@ -28,4 +27,3 @@ export const HorizontalSave = (props: any) => {
 }
 
 export default HorizontalSave
-

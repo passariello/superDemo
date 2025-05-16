@@ -53,10 +53,6 @@ if (process.env.NODE_ENV !== 'test') {
 // URL ENCODE
 app.use(bodyParser.urlencoded({ extended: true }))
 
-// SET EJS ENGINE
-// app.set('view engine', 'ejs')
-app.set("view engine", "pug")
-
 // SET PAGES FOLDER
 app.set("views", path.join(__dirname, "views"))
 
@@ -101,7 +97,7 @@ app.post("/" + superDemo.alias, require("../routes/post"))
 app.use(
   /(.*)/,
   (req, res, next) => {
-    return res.status(404).end()
+    return res.status(403).end()
   }
 )
 

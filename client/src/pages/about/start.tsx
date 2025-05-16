@@ -3,7 +3,6 @@ Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
 License: MIT
 */
 
-import React from 'react'
 import Social from '/src/components/general/social/component'
 
 import './styles.scss'
@@ -22,7 +21,7 @@ function About() {
 
         <div>
           <img className="upic"
-            src="/assets/logos/logo.png"
+            src="https://raw.githubusercontent.com/passariello/container/refs/heads/main/superdemo/images/logo.png"
             alt="Dario Passariello website"
             width="90"
           />

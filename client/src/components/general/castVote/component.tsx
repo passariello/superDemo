@@ -3,7 +3,7 @@ Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
 License: MIT
 */
 
-import React, { useEffect, useState } from 'react'
+// import React, { useState } from 'react'
 
 import './styles.scss'
 
@@ -11,20 +11,20 @@ const CastVote = (props) => {
 
   const stars = 5
   // const [star, setStar] = useState(null)
-  const [rate, setRate] = useState(null)
+  // const [rate, setRate] = useState(null)
 
   const Validate = (value: number) => {
 
-    const requestOptions = {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        id: props.id,
-        rating: value,
-        comment: "no comment",
-        email: superDemo.conf.fakeEmail,
-      })
-    }
+    // const requestOptions = {
+    //   method: 'POST',
+    //   headers: { 'Content-Type': 'application/json' },
+    //   body: JSON.stringify({
+    //     id: props.id,
+    //     rating: value,
+    //     comment: "no comment",
+    //     email: superDemo.conf.fakeEmail,
+    //   })
+    // }
 
     // fetch(superDemo.api + superDemo.conf.app.proxy.api + 'rating/', requestOptions)
     //   .then(response => response.json())
@@ -75,7 +75,7 @@ const CastVote = (props) => {
             <li
               key={i}
               onClick={() => Validate(Number(i + 1))}
-              className={Number(rate > i) ? "sel" : ""}
+            // className={Number(rate > i) ? "sel" : ""}
             >
             </li>
           ))}

@@ -1,0 +1,14 @@
+# Copyright: © 2025 Dario Passariello <dariopassariello@gmail.com>
+# License: MIT
+
+FROM node:latest
+
+LABEL MAINTAINER="Dario Passariello <dariopassariello@gmail.com>"
+
+RUN mkdir /server
+WORKDIR /server
+COPY ./ ../server/
+RUN npm install -f
+
+EXPOSE 9000
+CMD ["npm", "run", "start"]

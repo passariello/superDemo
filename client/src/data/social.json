@@ -1,26 +1,26 @@
 {
-  "website" : {
-      "url" : "",
-      "icon" : "/assets/logos/internet.svg",
-      "text" : "Website",
-      "description" : "Personal Website"
+  "website": {
+    "url": "",
+    "icon": "https://raw.githubusercontent.com/passariello/container/refs/heads/main/assets/logos/internet.svg",
+    "text": "Website",
+    "description": "Personal Website"
   },
-  "facebook" : {
-    "url" : "",
-    "icon" : "/assets/logos/facebook.svg",
-    "text" : "Facebook",
-    "description" : "Facebook account"
+  "facebook": {
+    "url": "",
+    "icon": "https://raw.githubusercontent.com/passariello/container/refs/heads/main/assets/logos/facebook.svg",
+    "text": "Facebook",
+    "description": "Facebook account"
   },
-  "twitter" : {
-    "url" : "",
-    "icon" : "/assets/logos/twitter.svg",
-    "text" : "Twitter",
-    "description" : "Twitter account"
+  "twitter": {
+    "url": "",
+    "icon": "https://raw.githubusercontent.com/passariello/container/refs/heads/main/assets/logos/twitter.svg",
+    "text": "Twitter",
+    "description": "Twitter account"
   },
-  "linkedin" : {
-    "url" : "",
-    "icon" : "/assets/logos/linkedin.svg",
-    "text" : "LinkedIn",
-    "description" : "Linked-In account"
+  "linkedin": {
+    "url": "",
+    "icon": "https://raw.githubusercontent.com/passariello/container/refs/heads/main/assets/logos/linkedin.svg",
+    "text": "LinkedIn",
+    "description": "Linked-In account"
   }
 }

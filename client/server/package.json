@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "",
   "main": "server.js",
+  "port": 3000,
   "scripts": {
     "start": "node start.js"
   },
@@ -11,5 +12,8 @@
   "dependencies": {
     "express": "^4.21.1",
     "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "http-proxy-middleware": "^3.0.5"
   }
 }
