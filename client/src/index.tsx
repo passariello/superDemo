@@ -3,12 +3,11 @@ Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
 License: MIT
 */
 
-import React from "react"
-import { createRoot } from "react-dom/client"
-import { BrowserRouter } from "react-router"
-
 // DPHELPER
 import 'dphelper'
+
+import { createRoot } from "react-dom/client"
+import { BrowserRouter } from "react-router"
 
 // GLOBALS
 import '/src/config/global'

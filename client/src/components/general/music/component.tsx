@@ -3,18 +3,16 @@ Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
 License: MIT
 */
 
-import React from 'react'
-
 import './styles.scss'
 
-// declare allow option for react
+// FIX error in AUDIO tag where allow is not recognized
+// Dario Passariello
 declare module 'react' {
   interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
     // extends React's HTMLAttributes
     allow?: string
   }
 }
-
 
 const Music = (channel: string) => {
 
@@ -33,5 +31,3 @@ const Music = (channel: string) => {
 }
 
 export default Music
-
-

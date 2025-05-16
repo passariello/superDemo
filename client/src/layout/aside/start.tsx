@@ -5,7 +5,7 @@ License: MIT
 
 // import HorizontalProgress from '/src/components/general/loaders/horizontal/progress/component'
 // import Music from '/src/components/general/music/component'
-import React from 'react'
+
 import { Link } from 'react-router'
 
 import "./styles.scss"

@@ -3,8 +3,6 @@ Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
 License: MIT
 */
 
-import React from 'react'
-
 import Uiselector from '/src/components/general/uiSelector/component'
 
 import "./styles.scss"

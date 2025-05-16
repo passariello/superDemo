@@ -3,7 +3,6 @@ Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
 License: MIT
 */
 
-import React from 'react'
 import Social from '/src/components/general/social/component'
 
 import './styles.scss'
