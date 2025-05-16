@@ -53,10 +53,6 @@ if (process.env.NODE_ENV !== 'test') {
 // URL ENCODE
 app.use(bodyParser.urlencoded({ extended: true }))
 
-// SET EJS ENGINE
-// app.set('view engine', 'ejs')
-app.set("view engine", "pug")
-
 // SET PAGES FOLDER
 app.set("views", path.join(__dirname, "views"))
 
