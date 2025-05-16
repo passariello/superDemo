@@ -101,7 +101,7 @@ app.post("/" + superDemo.alias, require("../routes/post"))
 app.use(
   /(.*)/,
   (req, res, next) => {
-    return res.status(404).end()
+    return res.status(403).end()
   }
 )
 

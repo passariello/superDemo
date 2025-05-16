@@ -288,6 +288,10 @@ module.exports = (env: any, args: any) => {
 
     plugins: [
 
+      new webpack.ProvidePlugin({
+        "React": "react"
+      }),
+
       // Environment
       new webpack.DefinePlugin({
         'process.env': JSON.stringify(constants)
