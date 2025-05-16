@@ -21,7 +21,7 @@ function About() {
 
         <div>
           <img className="upic"
-            src="/assets/logos/logo.png"
+            src="https://raw.githubusercontent.com/passariello/container/refs/heads/main/superdemo/images/logo.png"
             alt="Dario Passariello website"
             width="90"
           />

@@ -7,7 +7,7 @@ function Help() {
 
   return (
     <div>
-      <img src="/assets/images/cmon.png" style={
+      <img src="https://raw.githubusercontent.com/passariello/container/refs/heads/main/superdemo/images/cmon.png" style={
         {
           marginTop: "10px",
           marginLeft: "-51px",

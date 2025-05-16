@@ -18,7 +18,7 @@ const RoutePath = () => {
 
   return (
     <>
-      <Suspense fallback={<img src="/public/assets/loaders/img_load.gif" alt="" />}>
+      <Suspense fallback={<img src="https://raw.githubusercontent.com/passariello/container/refs/heads/main/assets/loaders/img_load.gif" alt="" />}>
 
         <article>
 

@@ -10,7 +10,7 @@ copyright (c) 2022 by dario Passariello
 ![dpHelper](https://img.shields.io/badge/dpHelper-npm-green?logo=dpHelper&logoColor=white)
 ![stModal](https://img.shields.io/badge/stModal-npm-green?logo=stModal&logoColor=white)
 
-![screenShot](/screenShot/000.png)
+![screenShot](https://raw.githubusercontent.com/passariello/container/refs/heads/main/superdemo/screenShot/000.png)
 
 ## Welcome
 
